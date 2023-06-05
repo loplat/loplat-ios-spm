@@ -10,7 +10,17 @@
 
 로플랫 SDK를 통해 방문통계, 매장에 도착했을 시 혜택알림 등 다양한 곳에 활용할 수 있습니다.
 
+## Requirement
+* loplat SDK를 사용하기 위해서는 로플랫에서 제공하는 ID와 Secret 키를 발급받아야 합니다. 발급을 원하시는 기업, 개발자는 아래의 내용을 기입하여 business@loplat.com 으로 보내주시기 바랍니다.
 
+```
+a.이름
+b.회사
+c.사용 목적
+```
+
+* deployment target 9.0 이상
+* Xcode 13 이상
 
 ## Documentation
 
