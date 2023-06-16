@@ -15505,7 +15505,7 @@
       "kind": "StringLiteral",
       "offset": 864,
       "length": 9,
-      "value": "\"1.4.4.1\""
+      "value": "\"1.4.5.1\""
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/GeofenceRegion.swift",
