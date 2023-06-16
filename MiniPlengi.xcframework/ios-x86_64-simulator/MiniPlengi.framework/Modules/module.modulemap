@@ -6,6 +6,6 @@ framework module MiniPlengi {
 }
 
 module MiniPlengi.Swift {
-    header "MiniPlengi-Swift.h"
-    requires objc
+  header "MiniPlengi-Swift.h"
+  requires objc
 }
