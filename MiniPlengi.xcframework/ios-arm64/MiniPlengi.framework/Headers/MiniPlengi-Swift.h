@@ -641,6 +641,9 @@ enum Result : NSInteger;
 ///   </li>
 /// </ul>
 + (void)requestAlwaysLocationAuthorization;
+/// 추적 권한을 요청합니다.
+/// iOS 14.5부터 IDFA(광고아이디)를 사용하기 위하여 유저가 권한을 부여해야 합니다.
++ (void)requestTrackingAuthorizationWithCompletion:(void (^ _Nonnull)(void))completion;
 @end
 
 enum ResponseType : NSInteger;
