@@ -282,6 +282,7 @@ extension MiniPlengi.Plengi {
   @objc dynamic public class func start() -> MiniPlengi.Result
   @objc dynamic public class func start(_ interval: Swift.Int) -> MiniPlengi.Result
   @objc dynamic public class func requestAlwaysLocationAuthorization()
+  @objc dynamic public class func requestTrackingAuthorization(completion: @escaping () -> Swift.Void)
 }
 extension MiniPlengi.Plengi {
   @objc dynamic public class func getDelegate() -> MiniPlengi.PlaceDelegate?
