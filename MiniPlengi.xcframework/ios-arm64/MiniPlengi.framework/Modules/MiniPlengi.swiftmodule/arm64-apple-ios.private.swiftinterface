@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiniPlengi
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AdSupport.ASIdentifierManager
@@ -282,11 +282,10 @@ extension MiniPlengi.Plengi {
   @objc dynamic public class func start() -> MiniPlengi.Result
   @objc dynamic public class func start(_ interval: Swift.Int) -> MiniPlengi.Result
   @objc dynamic public class func requestAlwaysLocationAuthorization()
-  @objc dynamic public class func requestTrackingAuthorization(completion: @escaping () -> Swift.Void)
 }
 extension MiniPlengi.Plengi {
-  @objc dynamic public class func getDelegate() -> MiniPlengi.PlaceDelegate?
-  @objc dynamic public class func setDelegate(_ delegate: MiniPlengi.PlaceDelegate?) -> MiniPlengi.Result
+  @objc dynamic public class func getDelegate() -> (any MiniPlengi.PlaceDelegate)?
+  @objc dynamic public class func setDelegate(_ delegate: (any MiniPlengi.PlaceDelegate)?) -> MiniPlengi.Result
   @objc dynamic public class func getEngineStatus() -> MiniPlengi.EngineStatus
   @objc dynamic public class func isEnabledAdNetwork() -> Swift.Bool
   @objc dynamic public class func enableAdNetwork(_ enableAd: Swift.Bool, enableNoti: Swift.Bool = true) -> MiniPlengi.Result
