@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		YilVkPhBIHVGLFFaM32EBp010sc=
+		uK/19lQ9un9NF8+thLXuq+DMtYI=
 		</data>
 		<key>Modules/MiniPlengi.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		1eVmD/G9T4nPd/ulRFBmZ6IGhbE=
+		vwjz00awSCkD0M9IFjMcXzWLwj4=
 		</data>
 		<key>Modules/MiniPlengi.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/MiniPlengi.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		cf+fSmuobzliZD8bpcD5tvfyXx0=
+		QfpDvkYMUMhHFllhw5I9PLtYbx4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -101,11 +101,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1eVmD/G9T4nPd/ulRFBmZ6IGhbE=
+			vwjz00awSCkD0M9IFjMcXzWLwj4=
 			</data>
 			<key>hash2</key>
 			<data>
-			kVsVoxs7qdawfKWd1KxNoVECI0V8NuVT6sfpItA0NDA=
+			wu2832T2siZOl7EgMyU5IhVI5JvldOxL+/v8ifkNEdY=
 			</data>
 		</dict>
 		<key>Modules/MiniPlengi.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -145,11 +145,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cf+fSmuobzliZD8bpcD5tvfyXx0=
+			QfpDvkYMUMhHFllhw5I9PLtYbx4=
 			</data>
 			<key>hash2</key>
 			<data>
-			1jUAN2JCThb0QUJRPSQctE9xH3z+fEVXLEWjBrUNnGI=
+			E83WjPk4cYEUrOhU300YPIIu2q4usOq+O9KFcD3waqE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
