@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MiniPlengi-Swift.h</key>
 		<data>
-		HuXYrX6hthdgHfU8xP9ot0SHjQU=
+		lj993MkOfzklIr6nDrK7+t2JlTg=
 		</data>
 		<key>Headers/MiniPlengi.h</key>
 		<data>
@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NoGUG+yj2SJXkBRO8RIDwjITWh8=
+		oUfm98eI1PjU3p6QU1V7zdoU1FI=
 		</data>
 		<key>Modules/MiniPlengi.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		7qqlKDZDN+FEMa5CYMTdYD0ZuKw=
+		ee5rBfq+smxd7rn6lI5276o6jbE=
 		</data>
 		<key>Modules/MiniPlengi.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		TZwMXJ7rDGCAiKyQVtKN3XEUjXE=
+		sCBwwtaFOYg7d8ia2wGITGNNw/A=
 		</data>
 		<key>Modules/MiniPlengi.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		xeK2+QzLAwhxLoUkE3fgjTtWiRA=
+		V2QFkqZ38/ICoehP+Ljk8kY0Cts=
 		</data>
 		<key>Modules/MiniPlengi.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		TZwMXJ7rDGCAiKyQVtKN3XEUjXE=
+		sCBwwtaFOYg7d8ia2wGITGNNw/A=
 		</data>
 		<key>Modules/MiniPlengi.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		2NAUIGdecoxZGj20gFZMRKbYk6k=
+		6I5gpvjTdy4pgnoK+pH9/EzOuf4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>loplatActivityRecognition.mlmodelc/coremldata.bin</key>
 		<data>
-		jRqKgi1MQwvnM0eb/IqmqwLo7XQ=
+		0r58vuZLv3C3kfcNyU4pP8/jQFs=
 		</data>
 		<key>loplatActivityRecognition.mlmodelc/metadata.json</key>
 		<data>
-		h9xJqJdAyfTmjVTf+6wevZXtiSI=
+		KBTLxtKeY77lAzukilCnjPmZjs0=
 		</data>
 		<key>loplatActivityRecognition.mlmodelc/model.espresso.net</key>
 		<data>
@@ -79,11 +79,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HuXYrX6hthdgHfU8xP9ot0SHjQU=
+			lj993MkOfzklIr6nDrK7+t2JlTg=
 			</data>
 			<key>hash2</key>
 			<data>
-			bvdADEHW9bTUfWvUQ8cnMpD9z4NBAVzb0LRXxDaZGZI=
+			OgOIu1RcC2YBH0mri0Q1RP8nW0uSKx13fhmJOAu+9R8=
 			</data>
 		</dict>
 		<key>Headers/MiniPlengi.h</key>
@@ -101,55 +101,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7qqlKDZDN+FEMa5CYMTdYD0ZuKw=
+			ee5rBfq+smxd7rn6lI5276o6jbE=
 			</data>
 			<key>hash2</key>
 			<data>
-			SVRdYztFcvEKeQxYxCdhx7X1/nFONvee7uQdtKde+/w=
+			FyZtp17hdZbGd45R/ML2KyW9g4zqESqmSAe8ZUK/sgA=
 			</data>
 		</dict>
 		<key>Modules/MiniPlengi.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TZwMXJ7rDGCAiKyQVtKN3XEUjXE=
+			sCBwwtaFOYg7d8ia2wGITGNNw/A=
 			</data>
 			<key>hash2</key>
 			<data>
-			dGuSgJd+hHPmbW4CZcQ6VYAYX5MCJt61Jqr+86QXc5s=
+			CJm6yMvRTEHKqgyUj168NWlrE29EKzXCYCYavDiA+xM=
 			</data>
 		</dict>
 		<key>Modules/MiniPlengi.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xeK2+QzLAwhxLoUkE3fgjTtWiRA=
+			V2QFkqZ38/ICoehP+Ljk8kY0Cts=
 			</data>
 			<key>hash2</key>
 			<data>
-			T69qvd6c1TUKUZ8xmnZM9s4/8o+FsrtNpBEdbNf9j1o=
+			RNOtGs3AulBiLHzUBnBN0dDFKIKtirycB9A7jT2mfsY=
 			</data>
 		</dict>
 		<key>Modules/MiniPlengi.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TZwMXJ7rDGCAiKyQVtKN3XEUjXE=
+			sCBwwtaFOYg7d8ia2wGITGNNw/A=
 			</data>
 			<key>hash2</key>
 			<data>
-			dGuSgJd+hHPmbW4CZcQ6VYAYX5MCJt61Jqr+86QXc5s=
+			CJm6yMvRTEHKqgyUj168NWlrE29EKzXCYCYavDiA+xM=
 			</data>
 		</dict>
 		<key>Modules/MiniPlengi.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2NAUIGdecoxZGj20gFZMRKbYk6k=
+			6I5gpvjTdy4pgnoK+pH9/EzOuf4=
 			</data>
 			<key>hash2</key>
 			<data>
-			N5ly71u2MV1zes4gsSQkn59W4gp6Wy+6Zy/rw8UrufU=
+			YGTGYdGxEnYWoF4An9c//QdHIYTjEGIRW6uidk3UT9s=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -178,22 +178,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jRqKgi1MQwvnM0eb/IqmqwLo7XQ=
+			0r58vuZLv3C3kfcNyU4pP8/jQFs=
 			</data>
 			<key>hash2</key>
 			<data>
-			XJIu3Et12X2ZzJYfoe2D9INROxaLkXP5QT2GKezFlbA=
+			ZaIrbA0vfkjSx0sxD9eZaCEMjvbY10nOHl9y3kQyvIQ=
 			</data>
 		</dict>
 		<key>loplatActivityRecognition.mlmodelc/metadata.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			h9xJqJdAyfTmjVTf+6wevZXtiSI=
+			KBTLxtKeY77lAzukilCnjPmZjs0=
 			</data>
 			<key>hash2</key>
 			<data>
-			GCVSu9ziZNb3k7Hc9lhzPRODs+GPQrDPhKcI6shhKJM=
+			0giUo6nCsI/W1fdeC9vrcEDWUcjxA+FaM84Zqu44g3c=
 			</data>
 		</dict>
 		<key>loplatActivityRecognition.mlmodelc/model.espresso.net</key>

@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiniPlengi
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiniPlengi
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AdSupport.ASIdentifierManager
 import AdSupport
@@ -35,12 +35,6 @@ public enum MonitoringType : Swift.Int {
 }
 extension MiniPlengi.Deflate {
   public static func compress(data: Foundation.Data) -> Foundation.Data
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Plengi : ObjectiveC.NSObject, CoreLocation.CLLocationManagerDelegate {
-  @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didChangeAuthorization status: CoreLocation.CLAuthorizationStatus)
-  @available(iOS 14.0, *)
-  @objc public func locationManagerDidChangeAuthorization(_ manager: CoreLocation.CLLocationManager)
-  @objc deinit
 }
 public enum DeflateError : Swift.Error {
   case wrongUncompressedBlockLengths
@@ -216,6 +210,7 @@ extension MiniPlengi.Advertisement {
 }
 @objc public protocol PlaceDelegate {
   @objc func responsePlaceEvent(_ plengiResponse: MiniPlengi.PlengiResponse)
+  @objc optional func responseManualProcess(_ msg: Swift.String)
 }
 @_inheritsConvenienceInitializers @objc open class Area : ObjectiveC.NSObject, Foundation.NSCoding {
   @objc public var id: Swift.Int
@@ -227,6 +222,12 @@ extension MiniPlengi.Advertisement {
   @objc public func encode(with aCoder: Foundation.NSCoder)
   @objc required convenience public init?(coder aDecoder: Foundation.NSCoder)
   @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Plengi : ObjectiveC.NSObject, CoreLocation.CLLocationManagerDelegate {
+  @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didChangeAuthorization status: CoreLocation.CLAuthorizationStatus)
+  @available(iOS 14.0, *)
+  @objc public func locationManagerDidChangeAuthorization(_ manager: CoreLocation.CLLocationManager)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc open class Complex : ObjectiveC.NSObject, Foundation.NSCoding {
@@ -278,11 +279,13 @@ extension MiniPlengi.Plengi {
   @objc dynamic public class func `init`(clientID ID: Swift.String, clientSecret secret: Swift.String, echoCode: Swift.String? = nil) -> MiniPlengi.Result
   @objc dynamic public class func setEchoCode(echoCode: Swift.String?) -> MiniPlengi.Result
   @objc dynamic public class func initialize(clientID ID: Swift.String, clientSecret secret: Swift.String) -> MiniPlengi.Result
+  @objc dynamic public class func setBrazeUserID(userID: Swift.String)
   @objc dynamic public class func stop() -> MiniPlengi.Result
   @objc dynamic public class func start() -> MiniPlengi.Result
   @objc dynamic public class func start(_ interval: Swift.Int) -> MiniPlengi.Result
   @objc dynamic public class func requestAlwaysLocationAuthorization()
   @objc dynamic public class func requestTrackingAuthorization(completion: @escaping () -> Swift.Void)
+  @objc dynamic public class func getSdkVersion() -> Swift.String?
 }
 extension MiniPlengi.Plengi {
   @objc dynamic public class func getDelegate() -> MiniPlengi.PlaceDelegate?

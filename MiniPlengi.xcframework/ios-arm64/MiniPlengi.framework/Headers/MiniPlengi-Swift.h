@@ -433,6 +433,11 @@ SWIFT_PROTOCOL("_TtP10MiniPlengi13PlaceDelegate_")
 /// \param plengiResponse 이벤트 결과를 담은 객체입니다. 자세한 사항은 https://developers.loplat.com 을 참고 해주세요.
 ///
 - (void)responsePlaceEvent:(PlengiResponse * _Nonnull)plengiResponse;
+@optional
+/// manual 장소인식 요청시에 실시간 process 이벤트가 전달됩니다. (TEST 모드에서만 사용 / Optional)
+/// \param msg 실시간 process 이벤트 메시지
+///
+- (void)responseManualProcess:(NSString * _Nonnull)msg;
 @end
 
 typedef SWIFT_ENUM(NSInteger, PlaceEvent, open) {
@@ -454,41 +459,9 @@ SWIFT_CLASS("_TtC10MiniPlengi6Plengi")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-enum Result : NSInteger;
-
-@interface Plengi (SWIFT_EXTENSION(MiniPlengi))
-/// 가장 최근에 인식되었을 떄의 행정구역과, 기기 위경도 인식 정보를 반환합니다.
-/// 성공한 경우 PlengiResponse.Result.SUCCESS / 움직임이 없거나 일정 시간(초기 로딩시간 2~3분)이 흐르지 않은 경우 위치인식 하지 못하여 대기 중인 경우에는 .PENDING을 반환합니다.
-/// \param completion 응답 받을 핸들러 객체
-///
-///
-/// returns:
-/// PlengiResponse.Result: PlengiResponse 객체의 Result
-+ (enum Result)getCurrentLocationInfoWithCompletion:(void (^ _Nonnull)(PlengiResponse * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-@interface Plengi (SWIFT_EXTENSION(MiniPlengi))
-/// 수동으로 현재 위치를 인식하도록 요청합니다.
-/// 성공한 경우 PlengiResponse.Result.SUCCESS / 문제가 발생했을 경우에는 PlengiResponse.Result.FAILED가 반환됩니다.
-/// warning:
-/// 테스트 용도로만 사용하셔야 합니다. 테스트를 위해 포그라운드 상태에서만 작동됩니다. !!! 메인 쓰레드에서만 사용가능합니다.
-///
-/// returns:
-/// PlengiResponse.Result: PlengiResponse 객체의 Result
-+ (enum Result)manual_refreshPlace_foreground SWIFT_WARN_UNUSED_RESULT;
-/// 수동으로 현재 위치를 인식하도록 요청합니다. (IP Location)
-/// 성공한 경우 PlengiResponse.Result.SUCCESS / 문제가 발생했을 경우에는 PlengiResponse.Result.FAILED가 반환됩니다.
-/// warning:
-/// 테스트 용도로만 사용하셔야 합니다. 테스트를 위해 포그라운드 상태에서만 작동됩니다. !!! 메인 쓰레드에서만 사용가능합니다.
-///
-/// returns:
-/// PlengiResponse.Result: PlengiResponse 객체의 Result
-+ (enum Result)manual_refreshPlace_ip_location SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(ios,introduced=9.0);
-@end
-
 @class UNUserNotificationCenter;
 @class UNNotificationResponse;
+enum Result : NSInteger;
 @class UIApplication;
 @class UILocalNotification;
 
@@ -529,6 +502,38 @@ enum Result : NSInteger;
 /// returns:
 /// PlengiResponse.Result: PlengiResponse 객체의 Result
 + (enum Result)processLoplatAdvertisement:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface Plengi (SWIFT_EXTENSION(MiniPlengi))
+/// 수동으로 현재 위치를 인식하도록 요청합니다.
+/// 성공한 경우 PlengiResponse.Result.SUCCESS / 문제가 발생했을 경우에는 PlengiResponse.Result.FAILED가 반환됩니다.
+/// warning:
+/// 테스트 용도로만 사용하셔야 합니다. 테스트를 위해 포그라운드 상태에서만 작동됩니다. !!! 메인 쓰레드에서만 사용가능합니다.
+///
+/// returns:
+/// PlengiResponse.Result: PlengiResponse 객체의 Result
++ (enum Result)manual_refreshPlace_foreground SWIFT_WARN_UNUSED_RESULT;
+/// 수동으로 현재 위치를 인식하도록 요청합니다. (IP Location)
+/// 성공한 경우 PlengiResponse.Result.SUCCESS / 문제가 발생했을 경우에는 PlengiResponse.Result.FAILED가 반환됩니다.
+/// warning:
+/// 테스트 용도로만 사용하셔야 합니다. 테스트를 위해 포그라운드 상태에서만 작동됩니다. !!! 메인 쓰레드에서만 사용가능합니다.
+///
+/// returns:
+/// PlengiResponse.Result: PlengiResponse 객체의 Result
++ (enum Result)manual_refreshPlace_ip_location SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(ios,introduced=9.0);
+@end
+
+
+@interface Plengi (SWIFT_EXTENSION(MiniPlengi))
+/// 가장 최근에 인식되었을 떄의 행정구역과, 기기 위경도 인식 정보를 반환합니다.
+/// 성공한 경우 PlengiResponse.Result.SUCCESS / 움직임이 없거나 일정 시간(초기 로딩시간 2~3분)이 흐르지 않은 경우 위치인식 하지 못하여 대기 중인 경우에는 .PENDING을 반환합니다.
+/// \param completion 응답 받을 핸들러 객체
+///
+///
+/// returns:
+/// PlengiResponse.Result: PlengiResponse 객체의 Result
++ (enum Result)getCurrentLocationInfoWithCompletion:(void (^ _Nonnull)(PlengiResponse * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -606,6 +611,7 @@ enum Result : NSInteger;
 /// returns:
 /// PlengiResponse.Result: PlengiResponse 객체의 Result
 + (enum Result)initializeWithClientID:(NSString * _Nonnull)ID clientSecret:(NSString * _Nonnull)secret SWIFT_WARN_UNUSED_RESULT;
++ (void)setBrazeUserIDWithUserID:(NSString * _Nonnull)userID;
 /// MiniPlengi 사용을 중지합니다.
 /// 정지가 성공하면 PlengiResponse.Result.SUCCESS, 실패하면 PlengiResponse.Result.FAIL이 반환
 ///
@@ -644,6 +650,11 @@ enum Result : NSInteger;
 /// 추적 권한을 요청합니다.
 /// iOS 14.5부터 IDFA(광고아이디)를 사용하기 위하여 유저가 권한을 부여해야 합니다.
 + (void)requestTrackingAuthorizationWithCompletion:(void (^ _Nonnull)(void))completion;
+/// SDK의 버전을 전달합니다.
+///
+/// returns:
+/// String형태의 SDK의 버전정보
++ (NSString * _Nullable)getSdkVersion SWIFT_WARN_UNUSED_RESULT;
 @end
 
 enum ResponseType : NSInteger;
