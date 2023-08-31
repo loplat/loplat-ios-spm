@@ -525,6 +525,1013 @@
       },
       {
         "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "MiniPlengi",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Plengi",
+        "printedName": "Plengi",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "locationManager",
+            "printedName": "locationManager(_:didChangeAuthorization:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLLocationManager",
+                "printedName": "CoreLocation.CLLocationManager",
+                "usr": "c:objc(cs)CLLocationManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLAuthorizationStatus",
+                "printedName": "CoreLocation.CLAuthorizationStatus",
+                "usr": "c:@E@CLAuthorizationStatus"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiniPlengi@objc(cs)Plengi(im)locationManager:didChangeAuthorizationStatus:",
+            "mangledName": "$s10MiniPlengi0B0C15locationManager_22didChangeAuthorizationySo010CLLocationD0C_So21CLAuthorizationStatusVtF",
+            "moduleName": "MiniPlengi",
+            "objc_name": "locationManager:didChangeAuthorizationStatus:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "locationManagerDidChangeAuthorization",
+            "printedName": "locationManagerDidChangeAuthorization(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLLocationManager",
+                "printedName": "CoreLocation.CLLocationManager",
+                "usr": "c:objc(cs)CLLocationManager"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiniPlengi@objc(cs)Plengi(im)locationManagerDidChangeAuthorization:",
+            "mangledName": "$s10MiniPlengi0B0C37locationManagerDidChangeAuthorizationyySo010CLLocationD0CF",
+            "moduleName": "MiniPlengi",
+            "intro_iOS": "14.0",
+            "objc_name": "locationManagerDidChangeAuthorization:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl",
+              "Available"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "`init`",
+            "printedName": "`init`(clientID:clientSecret:echoCode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "MiniPlengi.Result",
+                "usr": "c:@M@MiniPlengi@E@Result"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)initWithClientID:clientSecret:echoCode:",
+            "mangledName": "$s10MiniPlengi0B0C4init8clientID0D6Secret8echoCodeAA6ResultOSS_S2SSgtFZ",
+            "moduleName": "MiniPlengi",
+            "static": true,
+            "deprecated": true,
+            "objc_name": "initWithClientID:clientSecret:echoCode:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "Available",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setEchoCode",
+            "printedName": "setEchoCode(echoCode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "MiniPlengi.Result",
+                "usr": "c:@M@MiniPlengi@E@Result"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)setEchoCodeWithEchoCode:",
+            "mangledName": "$s10MiniPlengi0B0C11setEchoCode04echoE0AA6ResultOSSSg_tFZ",
+            "moduleName": "MiniPlengi",
+            "static": true,
+            "objc_name": "setEchoCodeWithEchoCode:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(clientID:clientSecret:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "MiniPlengi.Result",
+                "usr": "c:@M@MiniPlengi@E@Result"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)initializeWithClientID:clientSecret:",
+            "mangledName": "$s10MiniPlengi0B0C10initialize8clientID0D6SecretAA6ResultOSS_SStFZ",
+            "moduleName": "MiniPlengi",
+            "static": true,
+            "objc_name": "initializeWithClientID:clientSecret:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setBrazeUserID",
+            "printedName": "setBrazeUserID(userID:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)setBrazeUserIDWithUserID:",
+            "mangledName": "$s10MiniPlengi0B0C14setBrazeUserID04userF0ySS_tFZ",
+            "moduleName": "MiniPlengi",
+            "static": true,
+            "objc_name": "setBrazeUserIDWithUserID:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stop",
+            "printedName": "stop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "MiniPlengi.Result",
+                "usr": "c:@M@MiniPlengi@E@Result"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)stop",
+            "mangledName": "$s10MiniPlengi0B0C4stopAA6ResultOyFZ",
+            "moduleName": "MiniPlengi",
+            "static": true,
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "MiniPlengi.Result",
+                "usr": "c:@M@MiniPlengi@E@Result"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)start",
+            "mangledName": "$s10MiniPlengi0B0C5startAA6ResultOyFZ",
+            "moduleName": "MiniPlengi",
+            "static": true,
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "MiniPlengi.Result",
+                "usr": "c:@M@MiniPlengi@E@Result"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)start:",
+            "mangledName": "$s10MiniPlengi0B0C5startyAA6ResultOSiFZ",
+            "moduleName": "MiniPlengi",
+            "static": true,
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestAlwaysLocationAuthorization",
+            "printedName": "requestAlwaysLocationAuthorization()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)requestAlwaysLocationAuthorization",
+            "mangledName": "$s10MiniPlengi0B0C34requestAlwaysLocationAuthorizationyyFZ",
+            "moduleName": "MiniPlengi",
+            "static": true,
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestTrackingAuthorization",
+            "printedName": "requestTrackingAuthorization(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)requestTrackingAuthorizationWithCompletion:",
+            "mangledName": "$s10MiniPlengi0B0C28requestTrackingAuthorization10completionyyyc_tFZ",
+            "moduleName": "MiniPlengi",
+            "static": true,
+            "objc_name": "requestTrackingAuthorizationWithCompletion:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getSdkVersion",
+            "printedName": "getSdkVersion()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)getSdkVersion",
+            "mangledName": "$s10MiniPlengi0B0C13getSdkVersionSSSgyFZ",
+            "moduleName": "MiniPlengi",
+            "static": true,
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDelegate",
+            "printedName": "getDelegate()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MiniPlengi.PlaceDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PlaceDelegate",
+                    "printedName": "MiniPlengi.PlaceDelegate",
+                    "usr": "c:@M@MiniPlengi@objc(pl)PlaceDelegate"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)getDelegate",
+            "mangledName": "$s10MiniPlengi0B0C11getDelegateAA05PlaceD0_pSgyFZ",
+            "moduleName": "MiniPlengi",
+            "static": true,
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setDelegate",
+            "printedName": "setDelegate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "MiniPlengi.Result",
+                "usr": "c:@M@MiniPlengi@E@Result"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MiniPlengi.PlaceDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PlaceDelegate",
+                    "printedName": "MiniPlengi.PlaceDelegate",
+                    "usr": "c:@M@MiniPlengi@objc(pl)PlaceDelegate"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)setDelegate:",
+            "mangledName": "$s10MiniPlengi0B0C11setDelegateyAA6ResultOAA05PlaceD0_pSgFZ",
+            "moduleName": "MiniPlengi",
+            "static": true,
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getEngineStatus",
+            "printedName": "getEngineStatus()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EngineStatus",
+                "printedName": "MiniPlengi.EngineStatus",
+                "usr": "c:@M@MiniPlengi@E@EngineStatus"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)getEngineStatus",
+            "mangledName": "$s10MiniPlengi0B0C15getEngineStatusAA0dE0OyFZ",
+            "moduleName": "MiniPlengi",
+            "static": true,
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isEnabledAdNetwork",
+            "printedName": "isEnabledAdNetwork()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)isEnabledAdNetwork",
+            "mangledName": "$s10MiniPlengi0B0C18isEnabledAdNetworkSbyFZ",
+            "moduleName": "MiniPlengi",
+            "static": true,
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enableAdNetwork",
+            "printedName": "enableAdNetwork(_:enableNoti:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "MiniPlengi.Result",
+                "usr": "c:@M@MiniPlengi@E@Result"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)enableAdNetwork:enableNoti:",
+            "mangledName": "$s10MiniPlengi0B0C15enableAdNetwork_0C4NotiAA6ResultOSb_SbtFZ",
+            "moduleName": "MiniPlengi",
+            "static": true,
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "manual_refreshPlace_foreground",
+            "printedName": "manual_refreshPlace_foreground()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "MiniPlengi.Result",
+                "usr": "c:@M@MiniPlengi@E@Result"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)manual_refreshPlace_foreground",
+            "mangledName": "$s10MiniPlengi0B0C30manual_refreshPlace_foregroundAA6ResultOyFZ",
+            "moduleName": "MiniPlengi",
+            "static": true,
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "manual_refreshPlace_ip_location",
+            "printedName": "manual_refreshPlace_ip_location()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "MiniPlengi.Result",
+                "usr": "c:@M@MiniPlengi@E@Result"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)manual_refreshPlace_ip_location",
+            "mangledName": "$s10MiniPlengi0B0C31manual_refreshPlace_ip_locationAA6ResultOyFZ",
+            "moduleName": "MiniPlengi",
+            "static": true,
+            "intro_iOS": "9.0",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "Available",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "processLoplatAdvertisement",
+            "printedName": "processLoplatAdvertisement(_:didReceive:withCompletionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "MiniPlengi.Result",
+                "usr": "c:@M@MiniPlengi@E@Result"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UNUserNotificationCenter",
+                "printedName": "UserNotifications.UNUserNotificationCenter",
+                "usr": "c:objc(cs)UNUserNotificationCenter"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UNNotificationResponse",
+                "printedName": "UserNotifications.UNNotificationResponse",
+                "usr": "c:objc(cs)UNNotificationResponse"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)processLoplatAdvertisement:didReceive:withCompletionHandler:",
+            "mangledName": "$s10MiniPlengi0B0C26processLoplatAdvertisement_10didReceive21withCompletionHandlerAA6ResultOSo24UNUserNotificationCenterC_So22UNNotificationResponseCyyctFZ",
+            "moduleName": "MiniPlengi",
+            "static": true,
+            "intro_iOS": "10.0",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "Available",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "processLoplatAdvertisement",
+            "printedName": "processLoplatAdvertisement(_:handleActionWithIdentifier:for:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "MiniPlengi.Result",
+                "usr": "c:@M@MiniPlengi@E@Result"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplication",
+                "printedName": "UIKit.UIApplication",
+                "usr": "c:objc(cs)UIApplication"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UILocalNotification",
+                "printedName": "UIKit.UILocalNotification",
+                "usr": "c:objc(cs)UILocalNotification"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)processLoplatAdvertisement:handleActionWithIdentifier:for:completionHandler:",
+            "mangledName": "$s10MiniPlengi0B0C26processLoplatAdvertisement_26handleActionWithIdentifier3for17completionHandlerAA6ResultOSo13UIApplicationC_SSSgSo19UILocalNotificationCyyctFZ",
+            "moduleName": "MiniPlengi",
+            "static": true,
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "processLoplatAdvertisement",
+            "printedName": "processLoplatAdvertisement(_:didFinishLaunchingWithOptions:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "MiniPlengi.Result",
+                "usr": "c:@M@MiniPlengi@E@Result"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplication",
+                "printedName": "UIKit.UIApplication",
+                "usr": "c:objc(cs)UIApplication"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.AnyHashable : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.AnyHashable : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)processLoplatAdvertisement:didFinishLaunchingWithOptions:",
+            "mangledName": "$s10MiniPlengi0B0C26processLoplatAdvertisement_29didFinishLaunchingWithOptionsAA6ResultOSo13UIApplicationC_SDys11AnyHashableVypGSgtFZ",
+            "moduleName": "MiniPlengi",
+            "static": true,
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCurrentLocationInfo",
+            "printedName": "getCurrentLocationInfo(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "MiniPlengi.Result",
+                "usr": "c:@M@MiniPlengi@E@Result"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiniPlengi.PlengiResponse) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PlengiResponse",
+                    "printedName": "MiniPlengi.PlengiResponse",
+                    "usr": "c:@M@MiniPlengi@objc(cs)PlengiResponse"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)getCurrentLocationInfoWithCompletion:",
+            "mangledName": "$s10MiniPlengi0B0C22getCurrentLocationInfo10completionAA6ResultOyAA0B8ResponseCc_tFZ",
+            "moduleName": "MiniPlengi",
+            "static": true,
+            "objc_name": "getCurrentLocationInfoWithCompletion:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "registerBgFetch",
+            "printedName": "registerBgFetch()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10MiniPlengi0B0C15registerBgFetchyyFZ",
+            "mangledName": "$s10MiniPlengi0B0C15registerBgFetchyyFZ",
+            "moduleName": "MiniPlengi",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setLocationAuthorizationAlert",
+            "printedName": "setLocationAuthorizationAlert(title:message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10MiniPlengi0B0C29setLocationAuthorizationAlert5title7messageySS_SStFZ",
+            "mangledName": "$s10MiniPlengi0B0C29setLocationAuthorizationAlert5title7messageySS_SStFZ",
+            "moduleName": "MiniPlengi",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MiniPlengi@objc(cs)Plengi",
+        "mangledName": "$s10MiniPlengi0B0C",
+        "moduleName": "MiniPlengi",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -11117,1013 +12124,6 @@
       },
       {
         "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "MiniPlengi",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "Plengi",
-        "printedName": "Plengi",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "locationManager",
-            "printedName": "locationManager(_:didChangeAuthorization:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CLLocationManager",
-                "printedName": "CoreLocation.CLLocationManager",
-                "usr": "c:objc(cs)CLLocationManager"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CLAuthorizationStatus",
-                "printedName": "CoreLocation.CLAuthorizationStatus",
-                "usr": "c:@E@CLAuthorizationStatus"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@MiniPlengi@objc(cs)Plengi(im)locationManager:didChangeAuthorizationStatus:",
-            "mangledName": "$s10MiniPlengi0B0C15locationManager_22didChangeAuthorizationySo010CLLocationD0C_So21CLAuthorizationStatusVtF",
-            "moduleName": "MiniPlengi",
-            "objc_name": "locationManager:didChangeAuthorizationStatus:",
-            "declAttributes": [
-              "ObjC",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "locationManagerDidChangeAuthorization",
-            "printedName": "locationManagerDidChangeAuthorization(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CLLocationManager",
-                "printedName": "CoreLocation.CLLocationManager",
-                "usr": "c:objc(cs)CLLocationManager"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@MiniPlengi@objc(cs)Plengi(im)locationManagerDidChangeAuthorization:",
-            "mangledName": "$s10MiniPlengi0B0C37locationManagerDidChangeAuthorizationyySo010CLLocationD0CF",
-            "moduleName": "MiniPlengi",
-            "intro_iOS": "14.0",
-            "objc_name": "locationManagerDidChangeAuthorization:",
-            "declAttributes": [
-              "ObjC",
-              "AccessControl",
-              "Available"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "`init`",
-            "printedName": "`init`(clientID:clientSecret:echoCode:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Result",
-                "printedName": "MiniPlengi.Result",
-                "usr": "c:@M@MiniPlengi@E@Result"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)initWithClientID:clientSecret:echoCode:",
-            "mangledName": "$s10MiniPlengi0B0C4init8clientID0D6Secret8echoCodeAA6ResultOSS_S2SSgtFZ",
-            "moduleName": "MiniPlengi",
-            "static": true,
-            "deprecated": true,
-            "objc_name": "initWithClientID:clientSecret:echoCode:",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC",
-              "Available",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setEchoCode",
-            "printedName": "setEchoCode(echoCode:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Result",
-                "printedName": "MiniPlengi.Result",
-                "usr": "c:@M@MiniPlengi@E@Result"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)setEchoCodeWithEchoCode:",
-            "mangledName": "$s10MiniPlengi0B0C11setEchoCode04echoE0AA6ResultOSSSg_tFZ",
-            "moduleName": "MiniPlengi",
-            "static": true,
-            "objc_name": "setEchoCodeWithEchoCode:",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "initialize",
-            "printedName": "initialize(clientID:clientSecret:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Result",
-                "printedName": "MiniPlengi.Result",
-                "usr": "c:@M@MiniPlengi@E@Result"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)initializeWithClientID:clientSecret:",
-            "mangledName": "$s10MiniPlengi0B0C10initialize8clientID0D6SecretAA6ResultOSS_SStFZ",
-            "moduleName": "MiniPlengi",
-            "static": true,
-            "objc_name": "initializeWithClientID:clientSecret:",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setBrazeUserID",
-            "printedName": "setBrazeUserID(userID:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)setBrazeUserIDWithUserID:",
-            "mangledName": "$s10MiniPlengi0B0C14setBrazeUserID04userF0ySS_tFZ",
-            "moduleName": "MiniPlengi",
-            "static": true,
-            "objc_name": "setBrazeUserIDWithUserID:",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "stop",
-            "printedName": "stop()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Result",
-                "printedName": "MiniPlengi.Result",
-                "usr": "c:@M@MiniPlengi@E@Result"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)stop",
-            "mangledName": "$s10MiniPlengi0B0C4stopAA6ResultOyFZ",
-            "moduleName": "MiniPlengi",
-            "static": true,
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "start",
-            "printedName": "start()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Result",
-                "printedName": "MiniPlengi.Result",
-                "usr": "c:@M@MiniPlengi@E@Result"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)start",
-            "mangledName": "$s10MiniPlengi0B0C5startAA6ResultOyFZ",
-            "moduleName": "MiniPlengi",
-            "static": true,
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "start",
-            "printedName": "start(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Result",
-                "printedName": "MiniPlengi.Result",
-                "usr": "c:@M@MiniPlengi@E@Result"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)start:",
-            "mangledName": "$s10MiniPlengi0B0C5startyAA6ResultOSiFZ",
-            "moduleName": "MiniPlengi",
-            "static": true,
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "requestAlwaysLocationAuthorization",
-            "printedName": "requestAlwaysLocationAuthorization()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)requestAlwaysLocationAuthorization",
-            "mangledName": "$s10MiniPlengi0B0C34requestAlwaysLocationAuthorizationyyFZ",
-            "moduleName": "MiniPlengi",
-            "static": true,
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "requestTrackingAuthorization",
-            "printedName": "requestTrackingAuthorization(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)requestTrackingAuthorizationWithCompletion:",
-            "mangledName": "$s10MiniPlengi0B0C28requestTrackingAuthorization10completionyyyc_tFZ",
-            "moduleName": "MiniPlengi",
-            "static": true,
-            "objc_name": "requestTrackingAuthorizationWithCompletion:",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getSdkVersion",
-            "printedName": "getSdkVersion()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)getSdkVersion",
-            "mangledName": "$s10MiniPlengi0B0C13getSdkVersionSSSgyFZ",
-            "moduleName": "MiniPlengi",
-            "static": true,
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getDelegate",
-            "printedName": "getDelegate()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "MiniPlengi.PlaceDelegate?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PlaceDelegate",
-                    "printedName": "MiniPlengi.PlaceDelegate",
-                    "usr": "c:@M@MiniPlengi@objc(pl)PlaceDelegate"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)getDelegate",
-            "mangledName": "$s10MiniPlengi0B0C11getDelegateAA05PlaceD0_pSgyFZ",
-            "moduleName": "MiniPlengi",
-            "static": true,
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setDelegate",
-            "printedName": "setDelegate(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Result",
-                "printedName": "MiniPlengi.Result",
-                "usr": "c:@M@MiniPlengi@E@Result"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "MiniPlengi.PlaceDelegate?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PlaceDelegate",
-                    "printedName": "MiniPlengi.PlaceDelegate",
-                    "usr": "c:@M@MiniPlengi@objc(pl)PlaceDelegate"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)setDelegate:",
-            "mangledName": "$s10MiniPlengi0B0C11setDelegateyAA6ResultOAA05PlaceD0_pSgFZ",
-            "moduleName": "MiniPlengi",
-            "static": true,
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getEngineStatus",
-            "printedName": "getEngineStatus()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "EngineStatus",
-                "printedName": "MiniPlengi.EngineStatus",
-                "usr": "c:@M@MiniPlengi@E@EngineStatus"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)getEngineStatus",
-            "mangledName": "$s10MiniPlengi0B0C15getEngineStatusAA0dE0OyFZ",
-            "moduleName": "MiniPlengi",
-            "static": true,
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "isEnabledAdNetwork",
-            "printedName": "isEnabledAdNetwork()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)isEnabledAdNetwork",
-            "mangledName": "$s10MiniPlengi0B0C18isEnabledAdNetworkSbyFZ",
-            "moduleName": "MiniPlengi",
-            "static": true,
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "enableAdNetwork",
-            "printedName": "enableAdNetwork(_:enableNoti:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Result",
-                "printedName": "MiniPlengi.Result",
-                "usr": "c:@M@MiniPlengi@E@Result"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)enableAdNetwork:enableNoti:",
-            "mangledName": "$s10MiniPlengi0B0C15enableAdNetwork_0C4NotiAA6ResultOSb_SbtFZ",
-            "moduleName": "MiniPlengi",
-            "static": true,
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "manual_refreshPlace_foreground",
-            "printedName": "manual_refreshPlace_foreground()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Result",
-                "printedName": "MiniPlengi.Result",
-                "usr": "c:@M@MiniPlengi@E@Result"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)manual_refreshPlace_foreground",
-            "mangledName": "$s10MiniPlengi0B0C30manual_refreshPlace_foregroundAA6ResultOyFZ",
-            "moduleName": "MiniPlengi",
-            "static": true,
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "manual_refreshPlace_ip_location",
-            "printedName": "manual_refreshPlace_ip_location()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Result",
-                "printedName": "MiniPlengi.Result",
-                "usr": "c:@M@MiniPlengi@E@Result"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)manual_refreshPlace_ip_location",
-            "mangledName": "$s10MiniPlengi0B0C31manual_refreshPlace_ip_locationAA6ResultOyFZ",
-            "moduleName": "MiniPlengi",
-            "static": true,
-            "intro_iOS": "9.0",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC",
-              "Available",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "processLoplatAdvertisement",
-            "printedName": "processLoplatAdvertisement(_:didReceive:withCompletionHandler:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Result",
-                "printedName": "MiniPlengi.Result",
-                "usr": "c:@M@MiniPlengi@E@Result"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UNUserNotificationCenter",
-                "printedName": "UserNotifications.UNUserNotificationCenter",
-                "usr": "c:objc(cs)UNUserNotificationCenter"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UNNotificationResponse",
-                "printedName": "UserNotifications.UNNotificationResponse",
-                "usr": "c:objc(cs)UNNotificationResponse"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)processLoplatAdvertisement:didReceive:withCompletionHandler:",
-            "mangledName": "$s10MiniPlengi0B0C26processLoplatAdvertisement_10didReceive21withCompletionHandlerAA6ResultOSo24UNUserNotificationCenterC_So22UNNotificationResponseCyyctFZ",
-            "moduleName": "MiniPlengi",
-            "static": true,
-            "intro_iOS": "10.0",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC",
-              "Available",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "processLoplatAdvertisement",
-            "printedName": "processLoplatAdvertisement(_:handleActionWithIdentifier:for:completionHandler:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Result",
-                "printedName": "MiniPlengi.Result",
-                "usr": "c:@M@MiniPlengi@E@Result"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIApplication",
-                "printedName": "UIKit.UIApplication",
-                "usr": "c:objc(cs)UIApplication"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UILocalNotification",
-                "printedName": "UIKit.UILocalNotification",
-                "usr": "c:objc(cs)UILocalNotification"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)processLoplatAdvertisement:handleActionWithIdentifier:for:completionHandler:",
-            "mangledName": "$s10MiniPlengi0B0C26processLoplatAdvertisement_26handleActionWithIdentifier3for17completionHandlerAA6ResultOSo13UIApplicationC_SSSgSo19UILocalNotificationCyyctFZ",
-            "moduleName": "MiniPlengi",
-            "static": true,
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "processLoplatAdvertisement",
-            "printedName": "processLoplatAdvertisement(_:didFinishLaunchingWithOptions:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Result",
-                "printedName": "MiniPlengi.Result",
-                "usr": "c:@M@MiniPlengi@E@Result"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIApplication",
-                "printedName": "UIKit.UIApplication",
-                "usr": "c:objc(cs)UIApplication"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.AnyHashable : Any]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.AnyHashable : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AnyHashable",
-                        "printedName": "Swift.AnyHashable",
-                        "usr": "s:s11AnyHashableV"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)processLoplatAdvertisement:didFinishLaunchingWithOptions:",
-            "mangledName": "$s10MiniPlengi0B0C26processLoplatAdvertisement_29didFinishLaunchingWithOptionsAA6ResultOSo13UIApplicationC_SDys11AnyHashableVypGSgtFZ",
-            "moduleName": "MiniPlengi",
-            "static": true,
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getCurrentLocationInfo",
-            "printedName": "getCurrentLocationInfo(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Result",
-                "printedName": "MiniPlengi.Result",
-                "usr": "c:@M@MiniPlengi@E@Result"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(MiniPlengi.PlengiResponse) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PlengiResponse",
-                    "printedName": "MiniPlengi.PlengiResponse",
-                    "usr": "c:@M@MiniPlengi@objc(cs)PlengiResponse"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)getCurrentLocationInfoWithCompletion:",
-            "mangledName": "$s10MiniPlengi0B0C22getCurrentLocationInfo10completionAA6ResultOyAA0B8ResponseCc_tFZ",
-            "moduleName": "MiniPlengi",
-            "static": true,
-            "objc_name": "getCurrentLocationInfoWithCompletion:",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "registerBgFetch",
-            "printedName": "registerBgFetch()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10MiniPlengi0B0C15registerBgFetchyyFZ",
-            "mangledName": "$s10MiniPlengi0B0C15registerBgFetchyyFZ",
-            "moduleName": "MiniPlengi",
-            "static": true,
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setLocationAuthorizationAlert",
-            "printedName": "setLocationAuthorizationAlert(title:message:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10MiniPlengi0B0C29setLocationAuthorizationAlert5title7messageySS_SStFZ",
-            "mangledName": "$s10MiniPlengi0B0C29setLocationAuthorizationAlert5title7messageySS_SStFZ",
-            "moduleName": "MiniPlengi",
-            "static": true,
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@MiniPlengi@objc(cs)Plengi",
-        "mangledName": "$s10MiniPlengi0B0C",
-        "moduleName": "MiniPlengi",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC",
-          "RawDocComment"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "hasMissingDesignatedInitializers": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -15648,6 +15648,13 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Plengi.swift",
+      "kind": "StringLiteral",
+      "offset": 864,
+      "length": 8,
+      "value": "\"1.4.11\""
+    },
+    {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/GeofenceRegion.swift",
       "kind": "StringLiteral",
       "offset": 235,
@@ -16483,133 +16490,126 @@
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "FloatLiteral",
-      "offset": 2315,
+      "offset": 2085,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "IntegerLiteral",
-      "offset": 2356,
+      "offset": 2126,
       "length": 4,
       "value": "120"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "FloatLiteral",
-      "offset": 2402,
+      "offset": 2172,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "IntegerLiteral",
-      "offset": 4564,
+      "offset": 4334,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "IntegerLiteral",
-      "offset": 4597,
+      "offset": 4367,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "IntegerLiteral",
-      "offset": 4628,
+      "offset": 4398,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "IntegerLiteral",
-      "offset": 4662,
+      "offset": 4432,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "IntegerLiteral",
-      "offset": 4703,
+      "offset": 4473,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "StringLiteral",
-      "offset": 4847,
+      "offset": 4617,
       "length": 18,
       "value": "\"loplat_bleMetaDB\""
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "StringLiteral",
-      "offset": 4909,
+      "offset": 4679,
       "length": 26,
       "value": "\"loplat_ble_meta_data.zip\""
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "StringLiteral",
-      "offset": 4972,
+      "offset": 4742,
       "length": 25,
       "value": "\"loplat_dl_temporary_dir\""
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "IntegerLiteral",
-      "offset": 5092,
+      "offset": 4856,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "IntegerLiteral",
-      "offset": 5130,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5182,
+      "offset": 4907,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "IntegerLiteral",
-      "offset": 5244,
+      "offset": 4969,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "BooleanLiteral",
-      "offset": 5892,
+      "offset": 5617,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "BooleanLiteral",
-      "offset": 6122,
+      "offset": 5847,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "BooleanLiteral",
-      "offset": 6310,
+      "offset": 6035,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "BooleanLiteral",
-      "offset": 24461,
+      "offset": 25140,
       "length": 4,
       "value": "true"
     },
@@ -17982,8 +17982,8 @@
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Engine\/Logger.swift",
       "kind": "BooleanLiteral",
       "offset": 2116,
-      "length": 4,
-      "value": "true"
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/Advertisement.swift",
@@ -25691,13 +25691,6 @@
       "offset": 403,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Plengi.swift",
-      "kind": "StringLiteral",
-      "offset": 864,
-      "length": 8,
-      "value": "\"1.4.10\""
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/Complex.swift",
