@@ -1,0 +1,46 @@
+
+name: Xcode - Build and Analyze
+
+on:
+  # workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - run: |
+          git fetch --prune --unshallow
+      - run: |
+          echo $(git tag -l)
+
+      - name: Extract Version and Create Tag
+        id: create_tag
+        run: |
+          commit_message=$(git log -1 --pretty=%B)
+
+          if [[ $commit_message =~ ([0-9]+\.[0-9]+\.[0-9]+) ]]; then
+            version="${BASH_REMATCH[1]}"
+            echo "추출된 버전: $version"
+            echo "::set-output name=VERSION::v$version"
+            
+            git tag "v$version"
+            git push --tags
+          else
+            echo "버전 번호를 찾을 수 없습니다."
+          fi
+
+      - name: Release 생성
+        uses: actions/create-release@v1
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with: 
+          tag_name: ${{ steps.create_tag.outputs.VERSION }}
+          release_name: ${{ steps.create_tag.outputs.VERSION }}
+          draft: false 
+          prerelease: false
+        
