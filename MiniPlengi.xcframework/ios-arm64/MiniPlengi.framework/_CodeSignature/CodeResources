@@ -46,7 +46,7 @@
 		</data>
 		<key>loplatActivityRecognition.mlmodelc/coremldata.bin</key>
 		<data>
-		iatt8LvgAgcwqxLl7qC4yGEFQbs=
+		nvWkKIuPdOzqHqaHfgjDlq8BnV4=
 		</data>
 		<key>loplatActivityRecognition.mlmodelc/metadata.json</key>
 		<data>
@@ -178,11 +178,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iatt8LvgAgcwqxLl7qC4yGEFQbs=
+			nvWkKIuPdOzqHqaHfgjDlq8BnV4=
 			</data>
 			<key>hash2</key>
 			<data>
-			uKmR1KXtLRLU0mH8zMUSLwZ1iq9tcxSeqTDt1DKik44=
+			pBsZKUqljkPI6ynHXBXVOE+wturt9EH3GEk86TG585c=
 			</data>
 		</dict>
 		<key>loplatActivityRecognition.mlmodelc/metadata.json</key>
