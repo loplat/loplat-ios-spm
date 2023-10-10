@@ -1,7 +1,7 @@
 framework module MiniPlengi {
   umbrella header "MiniPlengi.h"
-
   export *
+
   module * { export * }
 }
 
