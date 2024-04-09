@@ -24,17 +24,6 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import os
-public enum UserStatus : Swift.Int {
-  case FAST_MOVE
-  case MOVE
-  case STAY
-  case LONG_STAY
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
 public enum MonitoringType : Swift.Int {
   case STAY
   case TRACKING
@@ -230,7 +219,7 @@ extension MiniPlengi.Advertisement {
   @objc func responsePlaceEvent(_ plengiResponse: MiniPlengi.PlengiResponse)
   @objc optional func responseManualProcess(_ msg: Swift.String)
 }
-@_hasMissingDesignatedInitializers public class ManagingVersion {
+@_hasMissingDesignatedInitializers @main public class ManagingVersion {
   public static var version: Swift.String
   public static func main()
   @objc deinit
@@ -300,7 +289,6 @@ extension MiniPlengi.Plengi {
   @objc dynamic public class func stop() -> MiniPlengi.Result
   @objc dynamic public class func start() -> MiniPlengi.Result
   @objc dynamic public class func start(_ interval: Swift.Int) -> MiniPlengi.Result
-  @objc dynamic public class func isEngineInitialized() -> MiniPlengi.Result
   @objc dynamic public class func requestAlwaysLocationAuthorization()
   @objc dynamic public class func requestTrackingAuthorization(completion: @escaping () -> Swift.Void)
   @objc dynamic public class func getSdkVersion() -> Swift.String?
@@ -328,9 +316,6 @@ extension MiniPlengi.Plengi {
   public class func registerBgFetch()
   public class func setLocationAuthorizationAlert(title: Swift.String, message: Swift.String)
 }
-extension MiniPlengi.UserStatus : Swift.Equatable {}
-extension MiniPlengi.UserStatus : Swift.Hashable {}
-extension MiniPlengi.UserStatus : Swift.RawRepresentable {}
 extension MiniPlengi.MonitoringType : Swift.Equatable {}
 extension MiniPlengi.MonitoringType : Swift.Hashable {}
 extension MiniPlengi.MonitoringType : Swift.RawRepresentable {}
