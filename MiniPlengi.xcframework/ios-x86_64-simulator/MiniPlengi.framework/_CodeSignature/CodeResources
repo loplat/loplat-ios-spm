@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/MiniPlengi.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		y4oaFXLfgXL2QqnfLyL+j1AD2M8=
+		VR+FILgu1+VfHD6EdDvi5ZZgG6M=
 		</data>
 		<key>Modules/MiniPlengi.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,15 @@
 		</data>
 		<key>Modules/MiniPlengi.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		sHlvpJ9qZkjETB1Ye6EVUQGjYbs=
+		2yY4Lm+T1J6tmFRrtlpmoAeGuAQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		DMO6nhy/Vstaz0ZF9viyEn7lLUM=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		a6p7stWsGO+jqnEEp1mf/uKA6WQ=
 		</data>
 		<key>loplatActivityRecognition.mlmodelc/analytics/coremldata.bin</key>
 		<data>
@@ -46,7 +50,7 @@
 		</data>
 		<key>loplatActivityRecognition.mlmodelc/coremldata.bin</key>
 		<data>
-		hKZFUstIRR9W4WiP+FA4rQaUugc=
+		HcMZxkofXGZ4X/5uSiTARaMp6v8=
 		</data>
 		<key>loplatActivityRecognition.mlmodelc/metadata.json</key>
 		<data>
@@ -101,11 +105,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			y4oaFXLfgXL2QqnfLyL+j1AD2M8=
+			VR+FILgu1+VfHD6EdDvi5ZZgG6M=
 			</data>
 			<key>hash2</key>
 			<data>
-			QfSha0fVfJQlEf01oho9ex7NaUbMZL9ufU+fK55UWrQ=
+			/QoOPpDjL2lHZZcqCALxNDOoyz4HC0z8fZLqroePNGA=
 			</data>
 		</dict>
 		<key>Modules/MiniPlengi.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -145,11 +149,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sHlvpJ9qZkjETB1Ye6EVUQGjYbs=
+			2yY4Lm+T1J6tmFRrtlpmoAeGuAQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			4vsQCWLh73vGHqGRWEko6igtiT+cBF6O5MgREnI1m48=
+			xn8u0out9s2xyDRy6d1Y5kbWCqXtSYbfjslbUnbLTTU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -161,6 +165,17 @@
 			<key>hash2</key>
 			<data>
 			4slI4sKQuIyxeKp6f0Aw3yaobzOMEXvkSq8T7QRX5V0=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			a6p7stWsGO+jqnEEp1mf/uKA6WQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			MP5asb30AVhyE8G93juXFnPtpbIpoLUXEUmJ+12hQmM=
 			</data>
 		</dict>
 		<key>loplatActivityRecognition.mlmodelc/analytics/coremldata.bin</key>
@@ -178,11 +193,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hKZFUstIRR9W4WiP+FA4rQaUugc=
+			HcMZxkofXGZ4X/5uSiTARaMp6v8=
 			</data>
 			<key>hash2</key>
 			<data>
-			w7vaQFkQ4SnqTIyaPKm142AamnlPJPlo3N+CeRSlFZg=
+			B9k/Z4wB5pbYoa0UM9UmautemaTfCyWQudVnLJZRIR8=
 			</data>
 		</dict>
 		<key>loplatActivityRecognition.mlmodelc/metadata.json</key>
