@@ -42,7 +42,7 @@
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
-		s8og2qYMWRsrMezFi/69vFgRNow=
+		ZVIC2zmvMzPXKotGw8CJZH5Vtdw=
 		</data>
 		<key>loplatActivityRecognition.mlmodelc/analytics/coremldata.bin</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>loplatActivityRecognition.mlmodelc/coremldata.bin</key>
 		<data>
-		BuB1dNuT5zYgQKXT/tFO15ONB28=
+		0r58vuZLv3C3kfcNyU4pP8/jQFs=
 		</data>
 		<key>loplatActivityRecognition.mlmodelc/metadata.json</key>
 		<data>
@@ -171,11 +171,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			s8og2qYMWRsrMezFi/69vFgRNow=
+			ZVIC2zmvMzPXKotGw8CJZH5Vtdw=
 			</data>
 			<key>hash2</key>
 			<data>
-			t9Tt9FWL0dEH/h4S4MZPAh5ucfxll11FVs0BI3+YH6g=
+			rU508nTMpapkRkfY3eBhaLPbQTeQyVS8yZvtstZAxxI=
 			</data>
 		</dict>
 		<key>loplatActivityRecognition.mlmodelc/analytics/coremldata.bin</key>
@@ -193,11 +193,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BuB1dNuT5zYgQKXT/tFO15ONB28=
+			0r58vuZLv3C3kfcNyU4pP8/jQFs=
 			</data>
 			<key>hash2</key>
 			<data>
-			2tTdPpTRf8IWV1AVina12T45Vts0wGgbXUmh+tA7WYo=
+			ZaIrbA0vfkjSx0sxD9eZaCEMjvbY10nOHl9y3kQyvIQ=
 			</data>
 		</dict>
 		<key>loplatActivityRecognition.mlmodelc/metadata.json</key>
