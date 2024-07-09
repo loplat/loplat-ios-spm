@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-// swift-module-flags: -target arm64-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiniPlengi
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiniPlengi
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AdSupport.ASIdentifierManager
 import AdSupport
@@ -24,6 +24,17 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import os
+public enum UserStatus : Swift.Int {
+  case FAST_MOVE
+  case MOVE
+  case STAY
+  case LONG_STAY
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 public enum MonitoringType : Swift.Int {
   case STAY
   case TRACKING
@@ -219,7 +230,7 @@ extension MiniPlengi.Advertisement {
   @objc func responsePlaceEvent(_ plengiResponse: MiniPlengi.PlengiResponse)
   @objc optional func responseManualProcess(_ msg: Swift.String)
 }
-@_hasMissingDesignatedInitializers @main public class ManagingVersion {
+@_hasMissingDesignatedInitializers public class ManagingVersion {
   public static var version: Swift.String
   public static func main()
   @objc deinit
@@ -289,6 +300,7 @@ extension MiniPlengi.Plengi {
   @objc dynamic public class func stop() -> MiniPlengi.Result
   @objc dynamic public class func start() -> MiniPlengi.Result
   @objc dynamic public class func start(_ interval: Swift.Int) -> MiniPlengi.Result
+  @objc dynamic public class func isEngineInitialized() -> MiniPlengi.Result
   @objc dynamic public class func requestAlwaysLocationAuthorization()
   @objc dynamic public class func requestTrackingAuthorization(completion: @escaping () -> Swift.Void)
   @objc dynamic public class func getSdkVersion() -> Swift.String?
@@ -316,6 +328,9 @@ extension MiniPlengi.Plengi {
   public class func registerBgFetch()
   public class func setLocationAuthorizationAlert(title: Swift.String, message: Swift.String)
 }
+extension MiniPlengi.UserStatus : Swift.Equatable {}
+extension MiniPlengi.UserStatus : Swift.Hashable {}
+extension MiniPlengi.UserStatus : Swift.RawRepresentable {}
 extension MiniPlengi.MonitoringType : Swift.Equatable {}
 extension MiniPlengi.MonitoringType : Swift.Hashable {}
 extension MiniPlengi.MonitoringType : Swift.RawRepresentable {}
