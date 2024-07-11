@@ -40365,77 +40365,77 @@
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Engine\/PlaceEngine\/PlaceEngine+IPLocation.swift",
       "kind": "StringLiteral",
-      "offset": 4483,
+      "offset": 4485,
       "length": 71,
       "value": "\"PlaceEngine:: wifiConnected:: duplicated searchPlaceIp for duplicated\""
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Engine\/PlaceEngine\/PlaceEngine+IPLocation.swift",
       "kind": "BooleanLiteral",
-      "offset": 5401,
+      "offset": 5403,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Engine\/PlaceEngine\/PlaceEngine+IPLocation.swift",
       "kind": "BooleanLiteral",
-      "offset": 5452,
+      "offset": 5454,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Engine\/PlaceEngine\/PlaceEngine+IPLocation.swift",
       "kind": "StringLiteral",
-      "offset": 5548,
+      "offset": 5550,
       "length": 143,
       "value": "\"PlaceEngine:: wifiDisconnected:: needIpLocation : \""
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Engine\/PlaceEngine\/PlaceEngine+IPLocation.swift",
       "kind": "StringLiteral",
-      "offset": 5637,
+      "offset": 5639,
       "length": 1,
       "value": "\", current : \""
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Engine\/PlaceEngine\/PlaceEngine+IPLocation.swift",
       "kind": "StringLiteral",
-      "offset": 5690,
+      "offset": 5692,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Engine\/PlaceEngine\/PlaceEngine+IPLocation.swift",
       "kind": "IntegerLiteral",
-      "offset": 6237,
+      "offset": 6239,
       "length": 4,
       "value": "1800"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Engine\/PlaceEngine\/PlaceEngine+IPLocation.swift",
       "kind": "IntegerLiteral",
-      "offset": 6254,
+      "offset": 6256,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Engine\/PlaceEngine\/PlaceEngine+IPLocation.swift",
       "kind": "BooleanLiteral",
-      "offset": 6345,
+      "offset": 6347,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Engine\/PlaceEngine\/PlaceEngine+IPLocation.swift",
       "kind": "StringLiteral",
-      "offset": 6444,
+      "offset": 6446,
       "length": 81,
       "value": "\"PlaceEngine:: wifiDisconnected:: Run Loop Register Leave event after 30 minutes\""
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Engine\/PlaceEngine\/PlaceEngine+IPLocation.swift",
       "kind": "BooleanLiteral",
-      "offset": 8235,
+      "offset": 8237,
       "length": 4,
       "value": "true"
     },
