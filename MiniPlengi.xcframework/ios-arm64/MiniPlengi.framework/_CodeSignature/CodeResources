@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MiniPlengi-Swift.h</key>
 		<data>
-		cXPcqCQWeiNK6Nz0nyJ+FoZ16u0=
+		00oDmIDT8vnj/MejkZirs6z3Y+w=
 		</data>
 		<key>Headers/MiniPlengi.h</key>
 		<data>
@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EyP/nXF7HR4o9VzkaRtpX0UdI0k=
+		prBaQY1Q6zOEVfsGbTCYCD3/SAE=
 		</data>
 		<key>Modules/MiniPlengi.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Om4akzVUsZBj4EOCySJLPZtmkps=
+		9rjFHruDLbPt8/CCFoTcX43Ab90=
 		</data>
 		<key>Modules/MiniPlengi.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		ql2rHhU+9XPyxDZg3pQrnsZOxUQ=
+		0DAqXJhXNufRmApJFbP5cVd0V6M=
 		</data>
 		<key>Modules/MiniPlengi.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		xjkGuB2z2ZnKptjRuHDTg+EndWQ=
+		XZ7iFJswnQw/Fq/tjOkRrURY/eg=
 		</data>
 		<key>Modules/MiniPlengi.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ql2rHhU+9XPyxDZg3pQrnsZOxUQ=
+		0DAqXJhXNufRmApJFbP5cVd0V6M=
 		</data>
 		<key>Modules/MiniPlengi.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Lj1Wwcg0eyRY1awt2ZGPaUA1Hus=
+		OSbiAcbvshMyxgBvUZ+flgtocOk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -42,23 +42,23 @@
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
-		piE4IcZj6qj+lnrelpJ4AI3krBA=
+		SU0ZFa3eQVrjuW9fepHF/Lo0knA=
 		</data>
 		<key>loplatActivityRecognition.mlmodelc/analytics/coremldata.bin</key>
 		<data>
-		JhIzAl97g0MpXgFvTeQxmWfwdPo=
+		tVLV/9zJHSMlSQTg1vkjrozJTgI=
 		</data>
 		<key>loplatActivityRecognition.mlmodelc/coremldata.bin</key>
 		<data>
-		VvuwYdeHf1oYTnm4Xcfj0PiPALs=
+		wMxJQCBCLaI7PK0++yenDwDvack=
 		</data>
 		<key>loplatActivityRecognition.mlmodelc/metadata.json</key>
 		<data>
-		JXP7NGSCUHcJPmRT7JHvP7I7/jM=
+		93fNmevDGBWt9Vtwl++aYv1DtFc=
 		</data>
 		<key>loplatActivityRecognition.mlmodelc/model.espresso.net</key>
 		<data>
-		rnLQiKT6Ryq4sddkSkrz0SVLq1g=
+		fyXrOkpdcU1IZUniYx1G+hn8EBc=
 		</data>
 		<key>loplatActivityRecognition.mlmodelc/model.espresso.shape</key>
 		<data>
@@ -81,21 +81,13 @@
 	<dict>
 		<key>Headers/MiniPlengi-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cXPcqCQWeiNK6Nz0nyJ+FoZ16u0=
-			</data>
 			<key>hash2</key>
 			<data>
-			31WQaArPmjC+NHn3fdbh6qNCpI7QmR6daCBCtsGR5Po=
+			JR0GCn0ww3IdD2fwfeVPwLC3asZwPe7aMCUDIxpe7ig=
 			</data>
 		</dict>
 		<key>Headers/MiniPlengi.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			jXIsGq0a9+RkOy48vPOy4JyiTRQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			yodUAUUjKxo5vh0G+2pbtBzXOg2ZEJmD7QWKEq8pW6Q=
@@ -103,65 +95,41 @@
 		</dict>
 		<key>Modules/MiniPlengi.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Om4akzVUsZBj4EOCySJLPZtmkps=
-			</data>
 			<key>hash2</key>
 			<data>
-			BHfHXVwOKcIfWAr8KzxkCCPABtZ3tAd3buXTTVxoOlI=
+			8RYhgPob3IKaI1AFoPKMOjwyrpEspXgC7+P7x3m3SLg=
 			</data>
 		</dict>
 		<key>Modules/MiniPlengi.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ql2rHhU+9XPyxDZg3pQrnsZOxUQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			zNkpkpdNHGcVDXzG4gUFNfy0yZEkIveQZXIGQdrsPZM=
+			7u/3q6FOpDuHXHfNhKjJzNc8ZJ2QsYyBQi6zE7EqTsc=
 			</data>
 		</dict>
 		<key>Modules/MiniPlengi.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xjkGuB2z2ZnKptjRuHDTg+EndWQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			m311Os+ubqseINJcIHUoDxv6v6d4KGB1m21bVze4Qp0=
+			iWjAJI5zERmLfnkt/kAO09rjdzHwx/MiRx/lbbHuR4k=
 			</data>
 		</dict>
 		<key>Modules/MiniPlengi.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ql2rHhU+9XPyxDZg3pQrnsZOxUQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			zNkpkpdNHGcVDXzG4gUFNfy0yZEkIveQZXIGQdrsPZM=
+			7u/3q6FOpDuHXHfNhKjJzNc8ZJ2QsYyBQi6zE7EqTsc=
 			</data>
 		</dict>
 		<key>Modules/MiniPlengi.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Lj1Wwcg0eyRY1awt2ZGPaUA1Hus=
-			</data>
 			<key>hash2</key>
 			<data>
-			akDGdTZtFTls725zFc6BW9tKS4+i4LRbXzYAAjLPfKg=
+			U0k1k2SEtd7BRq6u4uRVtd6rG0hEyA3++BSqviDV5xE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			DMO6nhy/Vstaz0ZF9viyEn7lLUM=
-			</data>
 			<key>hash2</key>
 			<data>
 			4slI4sKQuIyxeKp6f0Aw3yaobzOMEXvkSq8T7QRX5V0=
@@ -169,65 +137,41 @@
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			piE4IcZj6qj+lnrelpJ4AI3krBA=
-			</data>
 			<key>hash2</key>
 			<data>
-			zBbdQujBEZdczM6v3GDz+B8ufD/df8Z61xj8By8Kzsg=
+			zp/I1X/viqO6QwCTZYMjxKAtaPPTwxmEW0oa609OvzU=
 			</data>
 		</dict>
 		<key>loplatActivityRecognition.mlmodelc/analytics/coremldata.bin</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			JhIzAl97g0MpXgFvTeQxmWfwdPo=
-			</data>
 			<key>hash2</key>
 			<data>
-			jEDXaHd5AEeUnpnUJ4j6mgjYstu89Mco2Toxl0Kctcc=
+			BcNTFZciwGwwTgJgRYDx1zwDvuLMyrINoNp7TEEJjzk=
 			</data>
 		</dict>
 		<key>loplatActivityRecognition.mlmodelc/coremldata.bin</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			VvuwYdeHf1oYTnm4Xcfj0PiPALs=
-			</data>
 			<key>hash2</key>
 			<data>
-			PJh7Qu/p28DHVKfgSAZgrzQe3LpKw/11HFsgK43DBAM=
+			wBMotvjndMvdQouvAVmKHzHG+unC7xHNfr6O7xsBtBY=
 			</data>
 		</dict>
 		<key>loplatActivityRecognition.mlmodelc/metadata.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			JXP7NGSCUHcJPmRT7JHvP7I7/jM=
-			</data>
 			<key>hash2</key>
 			<data>
-			zJblscSjisgoV+te8jy1tDU7wfCiHAZnt1U24l9SyF4=
+			TSui59SG3vzsQvfdXcyFJP11Yt9X1geU2boYfiHHgmA=
 			</data>
 		</dict>
 		<key>loplatActivityRecognition.mlmodelc/model.espresso.net</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			rnLQiKT6Ryq4sddkSkrz0SVLq1g=
-			</data>
 			<key>hash2</key>
 			<data>
-			jIuoqcGO2H3C/ftucYGWmORbVfpJcHw4nHB3N1SHGxs=
+			65lzDISCzotWcT35rPKogR85h7lnBn90oGmDLlNNvVE=
 			</data>
 		</dict>
 		<key>loplatActivityRecognition.mlmodelc/model.espresso.shape</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			rburTKWKGnCgMr50R98evM6n3jQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			fY58DWWKXsEmO/c19FdfOjyZ1eE1HPOUIw+aOD7tVFE=
@@ -235,10 +179,6 @@
 		</dict>
 		<key>loplatActivityRecognition.mlmodelc/model.espresso.weights</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			nXEnbs56Tta34Ui1SGnVEqtICdo=
-			</data>
 			<key>hash2</key>
 			<data>
 			9QL1Nlq8AcI1PKy5EXxtBdrVxITVA944UNpcoiY2Gog=
@@ -246,10 +186,6 @@
 		</dict>
 		<key>loplatActivityRecognition.mlmodelc/model/coremldata.bin</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			yNfQ7w7t+oLS6hqlkoRbmm1LArc=
-			</data>
 			<key>hash2</key>
 			<data>
 			9aX9QtFqIDAnmO9u0wmXm0MAPSMg2fDo6pgxqSdZ+0s=
@@ -257,10 +193,6 @@
 		</dict>
 		<key>loplatActivityRecognition.mlmodelc/neural_network_optionals/coremldata.bin</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			frHCx4fPpCA7Xz7whP5tLBNbbs0=
-			</data>
 			<key>hash2</key>
 			<data>
 			yS1zUGLKrIh7+ol0GajT3B133O0dtbM8JqPO3DIUDzM=
