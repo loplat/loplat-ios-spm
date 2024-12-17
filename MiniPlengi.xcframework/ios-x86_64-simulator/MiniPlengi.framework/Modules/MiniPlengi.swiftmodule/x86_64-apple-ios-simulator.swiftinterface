@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
 // swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MiniPlengi
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AdSupport.ASIdentifierManager
@@ -99,6 +99,16 @@ public enum DeflateError : Swift.Error {
   @objc override dynamic public init()
   @objc deinit
 }
+public enum AiMessageEventType : Swift.Int {
+  case START
+  case UPDATE
+  case STOP
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @_inheritsConvenienceInitializers @objc open class Place : ObjectiveC.NSObject, Foundation.NSCoding {
   @objc public var loplat_id: Swift.Int
   @objc public var name: Swift.String
@@ -155,6 +165,8 @@ extension UIKit.UIViewController {
   @objc open var msg_id: Swift.Int
   @objc open var target_pkg: Swift.String
   @objc open var client_code: Swift.String
+  @objc open var fcm_token_id: Swift.Int
+  @objc open var ad_type: Swift.String
   @objc required convenience public init?(coder aDecoder: Foundation.NSCoder)
   @objc public func encode(with aCoder: Foundation.NSCoder)
   @objc override dynamic public init()
@@ -336,6 +348,9 @@ extension MiniPlengi.MonitoringType : Swift.Hashable {}
 extension MiniPlengi.MonitoringType : Swift.RawRepresentable {}
 extension MiniPlengi.DeflateError : Swift.Equatable {}
 extension MiniPlengi.DeflateError : Swift.Hashable {}
+extension MiniPlengi.AiMessageEventType : Swift.Equatable {}
+extension MiniPlengi.AiMessageEventType : Swift.Hashable {}
+extension MiniPlengi.AiMessageEventType : Swift.RawRepresentable {}
 extension MiniPlengi.Result : Swift.Equatable {}
 extension MiniPlengi.Result : Swift.Hashable {}
 extension MiniPlengi.Result : Swift.RawRepresentable {}
