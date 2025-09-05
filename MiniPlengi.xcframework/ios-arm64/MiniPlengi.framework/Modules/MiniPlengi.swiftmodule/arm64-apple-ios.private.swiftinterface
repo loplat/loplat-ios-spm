@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MiniPlengi
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MiniPlengi
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import AdSupport.ASIdentifierManager
 import AdSupport
@@ -12,10 +12,8 @@ import Compression
 import CoreLocation
 import CoreML
 import CoreMotion
-import CoreTelephony
 import Foundation
 @_exported import MiniPlengi
-import Network
 import NetworkExtension
 import SQLite3
 import SafariServices
@@ -68,9 +66,13 @@ public enum LogType : Swift.String, Swift.CaseIterable, Swift.CustomStringConver
   public static func shareLogFile()
   @objc deinit
 }
-extension MiniPlengi.Plengi {
-  @objc dynamic public class func getCurrentLocationInfo(completionHandler: @escaping (_ plengiResponse: MiniPlengi.RefinedPlengiResponse) -> Swift.Void)
-  @objc dynamic public class func getCurrentLocationInfo(completion: @escaping (_ plengiResponse: MiniPlengi.PlengiResponse) -> Swift.Void) -> MiniPlengi.Result
+@_inheritsConvenienceInitializers @objc open class CampaignCandidate : ObjectiveC.NSObject, Foundation.NSCoding {
+  @objc public var campaign_id: Swift.Int
+  @objc public var client_code: Swift.String
+  @objc required convenience public init?(coder aDecoder: Foundation.NSCoder)
+  @objc public func encode(with aCoder: Foundation.NSCoder)
+  @objc override dynamic public init()
+  @objc deinit
 }
 public enum MonitoringType : Swift.Int {
   case STAY
@@ -91,6 +93,10 @@ extension MiniPlengi.Deflate {
   @available(iOS 14.0, *)
   @objc public func locationManagerDidChangeAuthorization(_ manager: CoreLocation.CLLocationManager)
   @objc deinit
+}
+extension MiniPlengi.Plengi {
+  @objc dynamic public class func getCurrentLocationInfo(completionHandler: @escaping (_ plengiResponse: MiniPlengi.RefinedPlengiResponse) -> Swift.Void)
+  @objc dynamic public class func getCurrentLocationInfo(completion: @escaping (_ plengiResponse: MiniPlengi.PlengiResponse) -> Swift.Void) -> MiniPlengi.Result
 }
 public enum UserStatus : Swift.Int {
   case FAST_MOVE
@@ -114,8 +120,7 @@ public enum DeflateError : Swift.Error {
     get
   }
 }
-@_inheritsConvenienceInitializers @objc open class Fence : ObjectiveC.NSObject, Foundation.NSSecureCoding {
-  @objc public static var supportsSecureCoding: Swift.Bool
+@_inheritsConvenienceInitializers @objc open class Fence : ObjectiveC.NSObject, Foundation.NSCoding {
   @objc public var gfid: Swift.Int
   @objc public var dist: Swift.Double
   @objc public var name: Swift.String
@@ -125,8 +130,7 @@ public enum DeflateError : Swift.Error {
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc open class Geofence : ObjectiveC.NSObject, Foundation.NSSecureCoding {
-  @objc public static var supportsSecureCoding: Swift.Bool
+@_inheritsConvenienceInitializers @objc open class Geofence : ObjectiveC.NSObject, Foundation.NSCoding {
   @objc public var lat: Swift.Double
   @objc public var lng: Swift.Double
   @objc public var fences: [MiniPlengi.Fence]
@@ -136,8 +140,7 @@ public enum DeflateError : Swift.Error {
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc open class District : ObjectiveC.NSObject, Foundation.NSSecureCoding {
-  @objc public static var supportsSecureCoding: Swift.Bool
+@_inheritsConvenienceInitializers @objc open class District : ObjectiveC.NSObject, Foundation.NSCoding {
   @objc public var lv0_code: Swift.String
   @objc public var lv1_name: Swift.String
   @objc public var lv2_name: Swift.String
@@ -151,8 +154,7 @@ public enum DeflateError : Swift.Error {
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc open class Place : ObjectiveC.NSObject, Foundation.NSSecureCoding {
-  @objc public static var supportsSecureCoding: Swift.Bool
+@_inheritsConvenienceInitializers @objc open class Place : ObjectiveC.NSObject, Foundation.NSCoding {
   @objc public var loplat_id: Swift.Int
   @objc public var name: Swift.String
   @objc public var tags: Swift.String
@@ -175,21 +177,11 @@ public enum DeflateError : Swift.Error {
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc open class CampaignCandidate : ObjectiveC.NSObject, Foundation.NSSecureCoding {
-  @objc public static var supportsSecureCoding: Swift.Bool
-  @objc public var campaign_id: Swift.Int
-  @objc public var client_code: Swift.String
-  @objc required convenience public init?(coder aDecoder: Foundation.NSCoder)
-  @objc public func encode(with aCoder: Foundation.NSCoder)
-  @objc override dynamic public init()
-  @objc deinit
-}
 @_hasMissingDesignatedInitializers public class Deflate {
   public static func decompress(data: Foundation.Data) throws -> Foundation.Data
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc open class Location : ObjectiveC.NSObject, Foundation.NSSecureCoding {
-  @objc public static var supportsSecureCoding: Swift.Bool
+@_inheritsConvenienceInitializers @objc open class Location : ObjectiveC.NSObject, Foundation.NSCoding {
   @objc public var provider: Swift.String
   @objc public var floor: Swift.Int
   @objc public var time: Swift.Int64
@@ -216,8 +208,7 @@ public protocol LogUpdateDelegate : AnyObject {
   final public func close()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc open class Advertisement : ObjectiveC.NSObject, Foundation.NSSecureCoding {
-  @objc public static var supportsSecureCoding: Swift.Bool
+@_inheritsConvenienceInitializers @objc open class Advertisement : ObjectiveC.NSObject, Foundation.NSCoding {
   @objc open var alarm: Swift.String
   @objc open var title: Swift.String?
   @objc open var body: Swift.String?
@@ -288,8 +279,7 @@ extension MiniPlengi.Advertisement {
     get
   }
 }
-@_inheritsConvenienceInitializers @objc open class PlengiResponse : ObjectiveC.NSObject, Foundation.NSSecureCoding {
-  @objc public static var supportsSecureCoding: Swift.Bool
+@_inheritsConvenienceInitializers @objc open class PlengiResponse : ObjectiveC.NSObject, Foundation.NSCoding {
   @objc public var echoCode: Swift.String?
   @objc public var errorReason: Swift.String?
   @objc public var result: MiniPlengi.Result
@@ -339,8 +329,7 @@ extension MiniPlengi.Advertisement {
   public static func main()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc open class Area : ObjectiveC.NSObject, Foundation.NSSecureCoding {
-  @objc public static var supportsSecureCoding: Swift.Bool
+@_inheritsConvenienceInitializers @objc open class Area : ObjectiveC.NSObject, Foundation.NSCoding {
   @objc public var id: Swift.Int
   @objc public var name: Swift.String
   @objc public var tag: Swift.String
@@ -352,8 +341,7 @@ extension MiniPlengi.Advertisement {
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc open class Complex : ObjectiveC.NSObject, Foundation.NSSecureCoding {
-  @objc public static var supportsSecureCoding: Swift.Bool
+@_inheritsConvenienceInitializers @objc open class Complex : ObjectiveC.NSObject, Foundation.NSCoding {
   @objc public var id: Swift.Int
   @objc public var name: Swift.String
   @objc public var branch_name: Swift.String
@@ -365,8 +353,7 @@ extension MiniPlengi.Advertisement {
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc open class Nearbys : ObjectiveC.NSObject, Foundation.NSSecureCoding {
-  @objc public static var supportsSecureCoding: Swift.Bool
+@_inheritsConvenienceInitializers @objc open class Nearbys : ObjectiveC.NSObject, Foundation.NSCoding {
   @objc public var loplat_id: Swift.Int
   @objc public var placename: Swift.String
   @objc public var tags: Swift.String

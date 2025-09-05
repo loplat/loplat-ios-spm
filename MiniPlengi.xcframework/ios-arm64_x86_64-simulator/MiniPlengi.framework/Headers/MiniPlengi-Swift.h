@@ -312,10 +312,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 /// important:
 /// 해당 객체는 무조건 <code>responsePlaceEvent</code> delegate 로부터 전달받은 <code>plengiResponse</code> 안 <code>advertisement</code> 객체만을 사용해야합니다.
 SWIFT_CLASS("_TtC10MiniPlengi13Advertisement")
-@interface Advertisement : NSObject <NSSecureCoding>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
-+ (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
-+ (void)setSupportsSecureCoding:(BOOL)value;
+@interface Advertisement : NSObject <NSCoding>
 @property (nonatomic, copy) NSString * _Nonnull alarm;
 @property (nonatomic, copy) NSString * _Nullable title;
 @property (nonatomic, copy) NSString * _Nullable body;
@@ -338,10 +335,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
 /// important:
 /// 해당 객체는 무조건 <code>responsePlaceEvent</code> delegate 로부터 전달받은 <code>plengiResponse</code> 안 <code>area</code> 객체만을 사용해야합니다.
 SWIFT_CLASS("_TtC10MiniPlengi4Area")
-@interface Area : NSObject <NSSecureCoding>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
-+ (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
-+ (void)setSupportsSecureCoding:(BOOL)value;
+@interface Area : NSObject <NSCoding>
 @property (nonatomic) NSInteger id;
 @property (nonatomic, copy) NSString * _Nonnull name;
 @property (nonatomic, copy) NSString * _Nonnull tag;
@@ -353,10 +347,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
 @end
 
 SWIFT_CLASS("_TtC10MiniPlengi17CampaignCandidate")
-@interface CampaignCandidate : NSObject <NSSecureCoding>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
-+ (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
-+ (void)setSupportsSecureCoding:(BOOL)value;
+@interface CampaignCandidate : NSObject <NSCoding>
 @property (nonatomic) NSInteger campaign_id;
 @property (nonatomic, copy) NSString * _Nonnull client_code;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder;
@@ -368,10 +359,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
 /// important:
 /// 해당 객체는 무조건 <code>responsePlaceEvent</code> delegate 로부터 전달받은 <code>plengiResponse</code> 안 <code>complex</code> 객체만을 사용해야합니다.
 SWIFT_CLASS("_TtC10MiniPlengi7Complex")
-@interface Complex : NSObject <NSSecureCoding>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
-+ (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
-+ (void)setSupportsSecureCoding:(BOOL)value;
+@interface Complex : NSObject <NSCoding>
 @property (nonatomic) NSInteger id;
 @property (nonatomic, copy) NSString * _Nonnull name;
 @property (nonatomic, copy) NSString * _Nonnull branch_name;
@@ -386,10 +374,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
 /// important:
 /// 해당 객체는 무조건 <code>responsePlaceEvent</code> delegate 로부터 전달받은 <code>plengiResponse</code> 안 <code>district</code> 객체만을 사용해야합니다.
 SWIFT_CLASS("_TtC10MiniPlengi8District")
-@interface District : NSObject <NSSecureCoding>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
-+ (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
-+ (void)setSupportsSecureCoding:(BOOL)value;
+@interface District : NSObject <NSCoding>
 @property (nonatomic, copy) NSString * _Nonnull lv0_code;
 @property (nonatomic, copy) NSString * _Nonnull lv1_name;
 @property (nonatomic, copy) NSString * _Nonnull lv2_name;
@@ -408,10 +393,7 @@ typedef SWIFT_ENUM(NSInteger, EngineStatus, open) {
 };
 
 SWIFT_CLASS("_TtC10MiniPlengi5Fence")
-@interface Fence : NSObject <NSSecureCoding>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
-+ (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
-+ (void)setSupportsSecureCoding:(BOOL)value;
+@interface Fence : NSObject <NSCoding>
 @property (nonatomic) NSInteger gfid;
 @property (nonatomic) double dist;
 @property (nonatomic, copy) NSString * _Nonnull name;
@@ -425,10 +407,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
 /// important:
 /// 해당 객체는 무조건 <code>responsePlaceEvent</code> delegate 로부터 전달받은 <code>plengiResponse</code> 안 <code>geofence</code> 객체만을 사용해야합니다.
 SWIFT_CLASS("_TtC10MiniPlengi8Geofence")
-@interface Geofence : NSObject <NSSecureCoding>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
-+ (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
-+ (void)setSupportsSecureCoding:(BOOL)value;
+@interface Geofence : NSObject <NSCoding>
 @property (nonatomic) double lat;
 @property (nonatomic) double lng;
 @property (nonatomic, copy) NSArray<Fence *> * _Nonnull fences;
@@ -441,10 +420,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
 /// important:
 /// 해당 객체는 무조건 <code>responsePlaceEvent</code> delegate 로부터 전달받은 <code>plengiResponse</code> 안 <code>location</code> 객체만을 사용해야합니다.
 SWIFT_CLASS("_TtC10MiniPlengi8Location")
-@interface Location : NSObject <NSSecureCoding>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
-+ (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
-+ (void)setSupportsSecureCoding:(BOOL)value;
+@interface Location : NSObject <NSCoding>
 @property (nonatomic, copy) NSString * _Nonnull provider;
 @property (nonatomic) NSInteger floor;
 @property (nonatomic) int64_t time;
@@ -460,10 +436,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
 /// important:
 /// 해당 객체는 무조건 <code>responsePlaceEvent</code> delegate 로부터 전달받은 <code>plengiResponse</code> 안 <code>nearby</code> 객체만을 사용해야합니다.
 SWIFT_CLASS("_TtC10MiniPlengi7Nearbys")
-@interface Nearbys : NSObject <NSSecureCoding>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
-+ (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
-+ (void)setSupportsSecureCoding:(BOOL)value;
+@interface Nearbys : NSObject <NSCoding>
 @property (nonatomic) NSInteger loplat_id;
 @property (nonatomic, copy) NSString * _Nonnull placename;
 @property (nonatomic, copy) NSString * _Nonnull tags;
@@ -480,10 +453,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
 /// important:
 /// 해당 객체는 무조건 <code>responsePlaceEvent</code> delegate 로부터 전달받은 <code>plengiResponse</code> 안 <code>place</code> 객체만을 사용해야합니다.
 SWIFT_CLASS("_TtC10MiniPlengi5Place")
-@interface Place : NSObject <NSSecureCoding>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
-+ (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
-+ (void)setSupportsSecureCoding:(BOOL)value;
+@interface Place : NSObject <NSCoding>
 @property (nonatomic) NSInteger loplat_id;
 @property (nonatomic, copy) NSString * _Nonnull name;
 @property (nonatomic, copy) NSString * _Nonnull tags;
@@ -762,10 +732,7 @@ enum Result : NSInteger;
 enum ResponseType : NSInteger;
 /// 장소 인식 결과 값을 전달하는 PlengiResponse 객체
 SWIFT_CLASS("_TtC10MiniPlengi14PlengiResponse")
-@interface PlengiResponse : NSObject <NSSecureCoding>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
-+ (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
-+ (void)setSupportsSecureCoding:(BOOL)value;
+@interface PlengiResponse : NSObject <NSCoding>
 @property (nonatomic, copy) NSString * _Nullable echoCode;
 @property (nonatomic, copy) NSString * _Nullable errorReason;
 @property (nonatomic) enum Result result;
@@ -1159,10 +1126,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 /// important:
 /// 해당 객체는 무조건 <code>responsePlaceEvent</code> delegate 로부터 전달받은 <code>plengiResponse</code> 안 <code>advertisement</code> 객체만을 사용해야합니다.
 SWIFT_CLASS("_TtC10MiniPlengi13Advertisement")
-@interface Advertisement : NSObject <NSSecureCoding>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
-+ (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
-+ (void)setSupportsSecureCoding:(BOOL)value;
+@interface Advertisement : NSObject <NSCoding>
 @property (nonatomic, copy) NSString * _Nonnull alarm;
 @property (nonatomic, copy) NSString * _Nullable title;
 @property (nonatomic, copy) NSString * _Nullable body;
@@ -1185,10 +1149,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
 /// important:
 /// 해당 객체는 무조건 <code>responsePlaceEvent</code> delegate 로부터 전달받은 <code>plengiResponse</code> 안 <code>area</code> 객체만을 사용해야합니다.
 SWIFT_CLASS("_TtC10MiniPlengi4Area")
-@interface Area : NSObject <NSSecureCoding>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
-+ (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
-+ (void)setSupportsSecureCoding:(BOOL)value;
+@interface Area : NSObject <NSCoding>
 @property (nonatomic) NSInteger id;
 @property (nonatomic, copy) NSString * _Nonnull name;
 @property (nonatomic, copy) NSString * _Nonnull tag;
@@ -1200,10 +1161,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
 @end
 
 SWIFT_CLASS("_TtC10MiniPlengi17CampaignCandidate")
-@interface CampaignCandidate : NSObject <NSSecureCoding>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
-+ (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
-+ (void)setSupportsSecureCoding:(BOOL)value;
+@interface CampaignCandidate : NSObject <NSCoding>
 @property (nonatomic) NSInteger campaign_id;
 @property (nonatomic, copy) NSString * _Nonnull client_code;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder;
@@ -1215,10 +1173,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
 /// important:
 /// 해당 객체는 무조건 <code>responsePlaceEvent</code> delegate 로부터 전달받은 <code>plengiResponse</code> 안 <code>complex</code> 객체만을 사용해야합니다.
 SWIFT_CLASS("_TtC10MiniPlengi7Complex")
-@interface Complex : NSObject <NSSecureCoding>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
-+ (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
-+ (void)setSupportsSecureCoding:(BOOL)value;
+@interface Complex : NSObject <NSCoding>
 @property (nonatomic) NSInteger id;
 @property (nonatomic, copy) NSString * _Nonnull name;
 @property (nonatomic, copy) NSString * _Nonnull branch_name;
@@ -1233,10 +1188,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
 /// important:
 /// 해당 객체는 무조건 <code>responsePlaceEvent</code> delegate 로부터 전달받은 <code>plengiResponse</code> 안 <code>district</code> 객체만을 사용해야합니다.
 SWIFT_CLASS("_TtC10MiniPlengi8District")
-@interface District : NSObject <NSSecureCoding>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
-+ (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
-+ (void)setSupportsSecureCoding:(BOOL)value;
+@interface District : NSObject <NSCoding>
 @property (nonatomic, copy) NSString * _Nonnull lv0_code;
 @property (nonatomic, copy) NSString * _Nonnull lv1_name;
 @property (nonatomic, copy) NSString * _Nonnull lv2_name;
@@ -1255,10 +1207,7 @@ typedef SWIFT_ENUM(NSInteger, EngineStatus, open) {
 };
 
 SWIFT_CLASS("_TtC10MiniPlengi5Fence")
-@interface Fence : NSObject <NSSecureCoding>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
-+ (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
-+ (void)setSupportsSecureCoding:(BOOL)value;
+@interface Fence : NSObject <NSCoding>
 @property (nonatomic) NSInteger gfid;
 @property (nonatomic) double dist;
 @property (nonatomic, copy) NSString * _Nonnull name;
@@ -1272,10 +1221,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
 /// important:
 /// 해당 객체는 무조건 <code>responsePlaceEvent</code> delegate 로부터 전달받은 <code>plengiResponse</code> 안 <code>geofence</code> 객체만을 사용해야합니다.
 SWIFT_CLASS("_TtC10MiniPlengi8Geofence")
-@interface Geofence : NSObject <NSSecureCoding>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
-+ (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
-+ (void)setSupportsSecureCoding:(BOOL)value;
+@interface Geofence : NSObject <NSCoding>
 @property (nonatomic) double lat;
 @property (nonatomic) double lng;
 @property (nonatomic, copy) NSArray<Fence *> * _Nonnull fences;
@@ -1288,10 +1234,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
 /// important:
 /// 해당 객체는 무조건 <code>responsePlaceEvent</code> delegate 로부터 전달받은 <code>plengiResponse</code> 안 <code>location</code> 객체만을 사용해야합니다.
 SWIFT_CLASS("_TtC10MiniPlengi8Location")
-@interface Location : NSObject <NSSecureCoding>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
-+ (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
-+ (void)setSupportsSecureCoding:(BOOL)value;
+@interface Location : NSObject <NSCoding>
 @property (nonatomic, copy) NSString * _Nonnull provider;
 @property (nonatomic) NSInteger floor;
 @property (nonatomic) int64_t time;
@@ -1307,10 +1250,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
 /// important:
 /// 해당 객체는 무조건 <code>responsePlaceEvent</code> delegate 로부터 전달받은 <code>plengiResponse</code> 안 <code>nearby</code> 객체만을 사용해야합니다.
 SWIFT_CLASS("_TtC10MiniPlengi7Nearbys")
-@interface Nearbys : NSObject <NSSecureCoding>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
-+ (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
-+ (void)setSupportsSecureCoding:(BOOL)value;
+@interface Nearbys : NSObject <NSCoding>
 @property (nonatomic) NSInteger loplat_id;
 @property (nonatomic, copy) NSString * _Nonnull placename;
 @property (nonatomic, copy) NSString * _Nonnull tags;
@@ -1327,10 +1267,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
 /// important:
 /// 해당 객체는 무조건 <code>responsePlaceEvent</code> delegate 로부터 전달받은 <code>plengiResponse</code> 안 <code>place</code> 객체만을 사용해야합니다.
 SWIFT_CLASS("_TtC10MiniPlengi5Place")
-@interface Place : NSObject <NSSecureCoding>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
-+ (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
-+ (void)setSupportsSecureCoding:(BOOL)value;
+@interface Place : NSObject <NSCoding>
 @property (nonatomic) NSInteger loplat_id;
 @property (nonatomic, copy) NSString * _Nonnull name;
 @property (nonatomic, copy) NSString * _Nonnull tags;
@@ -1609,10 +1546,7 @@ enum Result : NSInteger;
 enum ResponseType : NSInteger;
 /// 장소 인식 결과 값을 전달하는 PlengiResponse 객체
 SWIFT_CLASS("_TtC10MiniPlengi14PlengiResponse")
-@interface PlengiResponse : NSObject <NSSecureCoding>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
-+ (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
-+ (void)setSupportsSecureCoding:(BOOL)value;
+@interface PlengiResponse : NSObject <NSCoding>
 @property (nonatomic, copy) NSString * _Nullable echoCode;
 @property (nonatomic, copy) NSString * _Nullable errorReason;
 @property (nonatomic) enum Result result;
