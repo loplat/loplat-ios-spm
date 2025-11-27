@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/MiniPlengi.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Was9EiiHpqK4feHWep+NuHU+nxM=
+		72Kz2cd6AM1RGG4d+ty+aMCza8o=
 		</data>
 		<key>Modules/MiniPlengi.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/MiniPlengi.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ivnFJgo9rEKyN+AxKNeDN31Wpgs=
+		JD+bWZA9iUtSMDpV7U3BRKqZj6E=
 		</data>
 		<key>Modules/MiniPlengi.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Was9EiiHpqK4feHWep+NuHU+nxM=
+		72Kz2cd6AM1RGG4d+ty+aMCza8o=
 		</data>
 		<key>Modules/MiniPlengi.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/MiniPlengi.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DtdU94L7OuY5cu1EvLkmQXB+U7Q=
+		v7MkKxROk6TMkxhEyg88Ygd4Uo4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>loplatActivityRecognition.mlmodelc/coremldata.bin</key>
 		<data>
-		VvuwYdeHf1oYTnm4Xcfj0PiPALs=
+		HNbZRjFsD3VGbXKLy62hcb7VRq4=
 		</data>
 		<key>loplatActivityRecognition.mlmodelc/metadata.json</key>
 		<data>
@@ -117,7 +117,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sAPSUNCwFkCZqACV+L4iBvBm2uBn6f9Q6m8IHJXOZGU=
+			MpM1a5J3rnXmynYy6/npA5lmEisMQz9Y8ID5MpdofXk=
 			</data>
 		</dict>
 		<key>Modules/MiniPlengi.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -145,14 +145,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IhzGCRyQ8lBTDEdwfp7JptCDwKDTfvFhT4TH3SnHviU=
+			xf6qZTRp6mcZlPn2EiB/Ny5vDD1iHhqiOZEbbFSZssA=
 			</data>
 		</dict>
 		<key>Modules/MiniPlengi.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sAPSUNCwFkCZqACV+L4iBvBm2uBn6f9Q6m8IHJXOZGU=
+			MpM1a5J3rnXmynYy6/npA5lmEisMQz9Y8ID5MpdofXk=
 			</data>
 		</dict>
 		<key>Modules/MiniPlengi.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -180,7 +180,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3fE1vRheJ0o+9xUkG4GrjTgSpd3CVr7IuK7RosAmquA=
+			K9jWWex0Asmj3RGxs5SILetC+Lu7Okx3EpKcKaerdOk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -208,7 +208,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PJh7Qu/p28DHVKfgSAZgrzQe3LpKw/11HFsgK43DBAM=
+			9ry2kfZbRpcRRa8C6zm/G/I1dl0k8/epcEG/+VxPEMQ=
 			</data>
 		</dict>
 		<key>loplatActivityRecognition.mlmodelc/metadata.json</key>
