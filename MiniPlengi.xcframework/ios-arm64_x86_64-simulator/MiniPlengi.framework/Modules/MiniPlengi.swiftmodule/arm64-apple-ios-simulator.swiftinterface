@@ -66,15 +66,6 @@ public enum LogType : Swift.String, Swift.CaseIterable, Swift.CustomStringConver
   public static func shareLogFile()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc open class CampaignCandidate : ObjectiveC.NSObject, Foundation.NSSecureCoding {
-  @objc public static var supportsSecureCoding: Swift.Bool
-  @objc public var campaign_id: Swift.Int
-  @objc public var client_code: Swift.String
-  @objc required convenience public init?(coder aDecoder: Foundation.NSCoder)
-  @objc public func encode(with aCoder: Foundation.NSCoder)
-  @objc override dynamic public init()
-  @objc deinit
-}
 public enum MonitoringType : Swift.Int {
   case STAY
   case TRACKING
@@ -94,10 +85,6 @@ extension MiniPlengi.Deflate {
   @available(iOS 14.0, *)
   @objc public func locationManagerDidChangeAuthorization(_ manager: CoreLocation.CLLocationManager)
   @objc deinit
-}
-extension MiniPlengi.Plengi {
-  @objc dynamic public class func getCurrentLocationInfo(completionHandler: @escaping (_ plengiResponse: MiniPlengi.RefinedPlengiResponse) -> Swift.Void)
-  @objc dynamic public class func getCurrentLocationInfo(completion: @escaping (_ plengiResponse: MiniPlengi.PlengiResponse) -> Swift.Void) -> MiniPlengi.Result
 }
 public enum UserStatus : Swift.Int {
   case FAST_MOVE
@@ -177,6 +164,15 @@ public enum DeflateError : Swift.Error {
   @objc public var post: Swift.String
   @objc public var pnu: Swift.String
   convenience public init?(_ data: Any?)
+  @objc required convenience public init?(coder aDecoder: Foundation.NSCoder)
+  @objc public func encode(with aCoder: Foundation.NSCoder)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc open class CampaignCandidate : ObjectiveC.NSObject, Foundation.NSSecureCoding {
+  @objc public static var supportsSecureCoding: Swift.Bool
+  @objc public var campaign_id: Swift.Int
+  @objc public var client_code: Swift.String
   @objc required convenience public init?(coder aDecoder: Foundation.NSCoder)
   @objc public func encode(with aCoder: Foundation.NSCoder)
   @objc override dynamic public init()
