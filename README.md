@@ -19,7 +19,7 @@ b.회사
 c.사용 목적
 ```
 
-* deployment target 9.0 이상
+* deployment target 12.0 이상
 * Xcode 13 이상
 
 ## Documentation
