@@ -583,25 +583,6 @@ enum Result : NSInteger;
 @end
 
 @interface Plengi (SWIFT_EXTENSION(MiniPlengi))
-/// 수동으로 현재 위치를 인식하도록 요청합니다.
-/// 성공한 경우 PlengiResponse.Result.SUCCESS / 문제가 발생했을 경우에는 PlengiResponse.Result.FAILED가 반환됩니다.
-/// warning:
-/// 테스트 용도로만 사용하셔야 합니다. 테스트를 위해 포그라운드 상태에서만 작동됩니다. !!! 메인 쓰레드에서만 사용가능합니다.
-///
-/// returns:
-/// PlengiResponse.Result: PlengiResponse 객체의 Result
-+ (enum Result)manual_refreshPlace_foreground SWIFT_WARN_UNUSED_RESULT;
-/// 수동으로 현재 위치를 인식하도록 요청합니다. (IP Location)
-/// 성공한 경우 PlengiResponse.Result.SUCCESS / 문제가 발생했을 경우에는 PlengiResponse.Result.FAILED가 반환됩니다.
-/// warning:
-/// 테스트 용도로만 사용하셔야 합니다. 테스트를 위해 포그라운드 상태에서만 작동됩니다. !!! 메인 쓰레드에서만 사용가능합니다.
-///
-/// returns:
-/// PlengiResponse.Result: PlengiResponse 객체의 Result
-+ (enum Result)manual_refreshPlace_ip_location SWIFT_WARN_UNUSED_RESULT;
-@end
-
-@interface Plengi (SWIFT_EXTENSION(MiniPlengi))
 /// MiniPlengi의 delegate을 반환합니다.
 ///
 /// returns:

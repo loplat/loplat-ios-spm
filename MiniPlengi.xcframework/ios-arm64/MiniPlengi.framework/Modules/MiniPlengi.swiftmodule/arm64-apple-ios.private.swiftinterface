@@ -414,11 +414,6 @@ extension MiniPlengi.Plengi {
   @objc dynamic public class func enableAdNetwork(_ enableAd: Swift.Bool, enableNoti: Swift.Bool = true) -> MiniPlengi.Result
 }
 extension MiniPlengi.Plengi {
-  @objc dynamic public class func manual_refreshPlace_foreground() -> MiniPlengi.Result
-  @objc dynamic public class func manual_refreshPlace_ip_location() -> MiniPlengi.Result
-  public class func shareLogToClient()
-}
-extension MiniPlengi.Plengi {
   @objc dynamic public class func processLoplatAdvertisement(_ center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Swift.Void) -> MiniPlengi.Result
   @objc dynamic public class func processLoplatAdvertisement(_ application: UIKit.UIApplication, handleActionWithIdentifier identifier: Swift.String?, for notification: UIKit.UILocalNotification, completionHandler: @escaping () -> Swift.Void) -> MiniPlengi.Result
   @objc dynamic public class func processLoplatAdvertisement(_ application: UIKit.UIApplication, didFinishLaunchingWithOptions launchOptions: [Swift.AnyHashable : Any]?) -> MiniPlengi.Result
