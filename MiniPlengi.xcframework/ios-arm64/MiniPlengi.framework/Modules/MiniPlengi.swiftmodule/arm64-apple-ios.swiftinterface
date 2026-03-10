@@ -387,6 +387,8 @@ extension MiniPlengi.Advertisement {
   case RELEASE_SERVER = 0
   case HALF_STAGING_SERVER = 1
   case FULL_STAGING_SERVER = 2
+  case GKE_RELEASE_SERVER = 100
+  case GKE_STAGING_SERVER = 101
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {

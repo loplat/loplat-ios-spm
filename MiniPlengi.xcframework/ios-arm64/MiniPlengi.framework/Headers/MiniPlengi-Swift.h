@@ -768,6 +768,8 @@ typedef SWIFT_ENUM(NSInteger, TestModeStatus, open) {
   TestModeStatusRELEASE_SERVER = 0,
   TestModeStatusHALF_STAGING_SERVER = 1,
   TestModeStatusFULL_STAGING_SERVER = 2,
+  TestModeStatusGKE_RELEASE_SERVER = 100,
+  TestModeStatusGKE_STAGING_SERVER = 101,
 };
 
 #endif

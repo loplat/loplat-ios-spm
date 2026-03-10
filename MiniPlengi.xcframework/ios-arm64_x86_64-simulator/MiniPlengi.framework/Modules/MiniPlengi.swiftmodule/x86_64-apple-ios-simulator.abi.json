@@ -20136,6 +20136,89 @@
             "fixedbinaryorder": 2
           },
           {
+            "kind": "Var",
+            "name": "GKE_RELEASE_SERVER",
+            "printedName": "GKE_RELEASE_SERVER",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiniPlengi.TestModeStatus.Type) -> MiniPlengi.TestModeStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TestModeStatus",
+                    "printedName": "MiniPlengi.TestModeStatus",
+                    "usr": "c:@M@MiniPlengi@E@TestModeStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MiniPlengi.TestModeStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TestModeStatus",
+                        "printedName": "MiniPlengi.TestModeStatus",
+                        "usr": "c:@M@MiniPlengi@E@TestModeStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MiniPlengi@E@TestModeStatus@TestModeStatusGKE_RELEASE_SERVER",
+            "mangledName": "$s10MiniPlengi14TestModeStatusO18GKE_RELEASE_SERVERyA2CmF",
+            "moduleName": "MiniPlengi",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "GKE_STAGING_SERVER",
+            "printedName": "GKE_STAGING_SERVER",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiniPlengi.TestModeStatus.Type) -> MiniPlengi.TestModeStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TestModeStatus",
+                    "printedName": "MiniPlengi.TestModeStatus",
+                    "usr": "c:@M@MiniPlengi@E@TestModeStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MiniPlengi.TestModeStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TestModeStatus",
+                        "printedName": "MiniPlengi.TestModeStatus",
+                        "usr": "c:@M@MiniPlengi@E@TestModeStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MiniPlengi@E@TestModeStatus@TestModeStatusGKE_STAGING_SERVER",
+            "mangledName": "$s10MiniPlengi14TestModeStatusO18GKE_STAGING_SERVERyA2CmF",
+            "moduleName": "MiniPlengi",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -21084,239 +21167,239 @@
     },
     {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 745,
-      "length": 30,
-      "value": "\"https:\/\/place-api.loplat.com\""
-    },
-    {
-      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 823,
-      "length": 30,
-      "value": "\"https:\/\/place-api.loplat.com\""
-    },
-    {
-      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 916,
+      "offset": 759,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1021,
+      "offset": 864,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1060,
+      "offset": 903,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1118,
+      "offset": 961,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1182,
+      "offset": 1025,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1324,
+      "offset": 1167,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1372,
+      "offset": 1215,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1462,
+      "offset": 1305,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
       "kind": "Array",
-      "offset": 1606,
+      "offset": 1449,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
       "kind": "Array",
-      "offset": 1665,
+      "offset": 1508,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
       "kind": "Array",
-      "offset": 1721,
+      "offset": 1564,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1764,
+      "offset": 1607,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2397,
+      "offset": 2240,
       "length": 60,
       "value": "\"https:\/\/storage.googleapis.com\/miniplengi_db\/ble-meta\/ble3\""
     },
     {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2631,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2720,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2769,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2819,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2859,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
-      "kind": "Array",
-      "offset": 2920,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
-      "kind": "FloatLiteral",
-      "offset": 2979,
-      "length": 4,
-      "value": "15.0"
-    },
-    {
-      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
-      "kind": "Array",
-      "offset": 3034,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3099,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
-      "kind": "FloatLiteral",
-      "offset": 3136,
-      "length": 3,
-      "value": "4.2"
-    },
-    {
-      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3273,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3562,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3670,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3778,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3845,
+      "offset": 2345,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3891,
+      "offset": 2392,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2439,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2528,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2577,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2627,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2667,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
+      "kind": "Array",
+      "offset": 2728,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
+      "kind": "FloatLiteral",
+      "offset": 2787,
+      "length": 4,
+      "value": "15.0"
+    },
+    {
+      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
+      "kind": "Array",
+      "offset": 2842,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2907,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
+      "kind": "FloatLiteral",
+      "offset": 2944,
+      "length": 3,
+      "value": "4.2"
+    },
+    {
+      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3081,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3370,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3478,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3586,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3653,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3699,
       "length": 58,
       "value": "\"outbound-campaign-stream-staging-ufgttfcema-an.a.run.app\""
     },
     {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3993,
+      "offset": 3801,
       "length": 58,
       "value": "\"outbound-campaign-stream-develop-2mzbux77lq-uc.a.run.app\""
     },
     {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4090,
+      "offset": 3898,
       "length": 50,
       "value": "\"outbound-campaign-stream-2mzbux77lq-uc.a.run.app\""
     },
     {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/SDKConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4211,
+      "offset": 4019,
       "length": 31,
       "value": "\"miniplengi_db\/fp_offline\/ble\/\""
     },
@@ -22183,50 +22266,78 @@
     },
     {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Networking.swift",
+      "kind": "StringLiteral",
+      "offset": 1739,
+      "length": 27,
+      "value": "\"https:\/\/plengi.loplat.com\""
+    },
+    {
+      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Networking.swift",
+      "kind": "StringLiteral",
+      "offset": 1807,
+      "length": 31,
+      "value": "\"https:\/\/stg.plengi.loplat.com\""
+    },
+    {
+      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Networking.swift",
+      "kind": "StringLiteral",
+      "offset": 1875,
+      "length": 30,
+      "value": "\"https:\/\/place-api.loplat.com\""
+    },
+    {
+      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Networking.swift",
+      "kind": "StringLiteral",
+      "offset": 1945,
+      "length": 30,
+      "value": "\"https:\/\/place-api.loplat.com\""
+    },
+    {
+      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Networking.swift",
       "kind": "IntegerLiteral",
-      "offset": 3405,
+      "offset": 3674,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 3453,
+      "offset": 3722,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Networking.swift",
       "kind": "IntegerLiteral",
-      "offset": 4131,
+      "offset": 4400,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 4178,
+      "offset": 4447,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Networking.swift",
       "kind": "IntegerLiteral",
-      "offset": 4898,
+      "offset": 5167,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 4946,
+      "offset": 5215,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 18211,
+      "offset": 19264,
       "length": 5,
       "value": "false"
     },
@@ -25357,7 +25468,7 @@
       "kind": "StringLiteral",
       "offset": 541,
       "length": 8,
-      "value": "\"1.5.17\""
+      "value": "\"1.5.18\""
     },
     {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/ZIPEngine\/Deflate\/Deflate+Constants.swift",
@@ -32459,8 +32570,22 @@
     },
     {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Plengi.Interface.swift",
+      "kind": "IntegerLiteral",
+      "offset": 615,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Plengi.Interface.swift",
+      "kind": "IntegerLiteral",
+      "offset": 649,
+      "length": 3,
+      "value": "101"
+    },
+    {
+      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Plengi.Interface.swift",
       "kind": "BooleanLiteral",
-      "offset": 13321,
+      "offset": 13456,
       "length": 4,
       "value": "true"
     },
