@@ -7659,6 +7659,99 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "section",
+            "printedName": "section",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiniPlengi@objc(cs)Place(py)section",
+            "mangledName": "$s10MiniPlengi5PlaceC7sectionSivp",
+            "moduleName": "MiniPlengi",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiniPlengi@objc(cs)Place(im)section",
+                "mangledName": "$s10MiniPlengi5PlaceC7sectionSivg",
+                "moduleName": "MiniPlengi",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiniPlengi@objc(cs)Place(im)setSection:",
+                "mangledName": "$s10MiniPlengi5PlaceC7sectionSivs",
+                "moduleName": "MiniPlengi",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MiniPlengi5PlaceC7sectionSivM",
+                "mangledName": "$s10MiniPlengi5PlaceC7sectionSivM",
+                "moduleName": "MiniPlengi",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(_:)",
@@ -22629,6 +22722,13 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/Place.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1435,
+      "length": 1,
+      "value": "0"
+    },
+    {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/ZIPEngine\/BitByteData\/MsbBitReader.swift",
       "kind": "IntegerLiteral",
       "offset": 344,
@@ -25468,7 +25568,7 @@
       "kind": "StringLiteral",
       "offset": 541,
       "length": 8,
-      "value": "\"1.5.18\""
+      "value": "\"1.5.19\""
     },
     {
       "filePath": "\/Users\/soohyeonlee\/Documents\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/ZIPEngine\/Deflate\/Deflate+Constants.swift",

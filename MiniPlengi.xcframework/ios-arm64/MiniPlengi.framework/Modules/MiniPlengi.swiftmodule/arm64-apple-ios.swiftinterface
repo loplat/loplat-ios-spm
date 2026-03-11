@@ -163,6 +163,7 @@ public enum DeflateError : Swift.Error {
   @objc public var address_road: Swift.String
   @objc public var post: Swift.String
   @objc public var pnu: Swift.String
+  @objc public var section: Swift.Int
   convenience public init?(_ data: Any?)
   @objc required convenience public init?(coder aDecoder: Foundation.NSCoder)
   @objc public func encode(with aCoder: Foundation.NSCoder)

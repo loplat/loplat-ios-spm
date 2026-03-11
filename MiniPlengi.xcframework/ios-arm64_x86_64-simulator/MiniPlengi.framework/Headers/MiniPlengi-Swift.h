@@ -500,6 +500,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
 @property (nonatomic, copy) NSString * _Nonnull address_road;
 @property (nonatomic, copy) NSString * _Nonnull post;
 @property (nonatomic, copy) NSString * _Nonnull pnu;
+@property (nonatomic) NSInteger section;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder;
 - (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -1282,6 +1283,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
 @property (nonatomic, copy) NSString * _Nonnull address_road;
 @property (nonatomic, copy) NSString * _Nonnull post;
 @property (nonatomic, copy) NSString * _Nonnull pnu;
+@property (nonatomic) NSInteger section;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder;
 - (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
