@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MiniPlengi
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MiniPlengi
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import AdSupport.ASIdentifierManager
 import AdSupport
@@ -397,8 +397,6 @@ extension MiniPlengi.Advertisement {
   }
 }
 extension MiniPlengi.Plengi {
-  @available(*, deprecated, message: "This method will be deprecated loplat SDK v1.3.2\nPlease consider using `Plengi.initialize()` API instead.`")
-  @objc dynamic public class func `init`(clientID ID: Swift.String, clientSecret secret: Swift.String, echoCode: Swift.String? = nil) -> MiniPlengi.Result
   @objc dynamic public class func setEchoCode(echoCode: Swift.String?) -> MiniPlengi.Result
   @objc dynamic public class func initialize(clientID ID: Swift.String, clientSecret secret: Swift.String) -> MiniPlengi.Result
   @objc dynamic public class func setBrazeUserID(userID: Swift.String)
@@ -418,12 +416,14 @@ extension MiniPlengi.Plengi {
 }
 extension MiniPlengi.Plengi {
   @objc dynamic public class func processLoplatAdvertisement(_ center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Swift.Void) -> MiniPlengi.Result
-  @objc dynamic public class func processLoplatAdvertisement(_ application: UIKit.UIApplication, handleActionWithIdentifier identifier: Swift.String?, for notification: UIKit.UILocalNotification, completionHandler: @escaping () -> Swift.Void) -> MiniPlengi.Result
-  @objc dynamic public class func processLoplatAdvertisement(_ application: UIKit.UIApplication, didFinishLaunchingWithOptions launchOptions: [Swift.AnyHashable : Any]?) -> MiniPlengi.Result
 }
 extension MiniPlengi.Plengi {
   public class func registerBgFetch()
   public class func setLocationAuthorizationAlert(title: Swift.String, message: Swift.String)
+}
+extension MiniPlengi.Plengi {
+  @available(*, deprecated, message: "This method will be deprecated loplat SDK v1.3.2\nPlease consider using `Plengi.initialize(clientID:clientSecret:)` API instead.\nOnce deprecated, this method will always return .FAIL.")
+  @objc dynamic public class func `init`(clientID ID: Swift.String, clientSecret secret: Swift.String, echoCode: Swift.String? = nil) -> MiniPlengi.Result
 }
 extension MiniPlengi.LogType : Swift.Equatable {}
 extension MiniPlengi.LogType : Swift.Hashable {}
@@ -436,6 +436,9 @@ extension MiniPlengi.UserStatus : Swift.Hashable {}
 extension MiniPlengi.UserStatus : Swift.RawRepresentable {}
 extension MiniPlengi.DeflateError : Swift.Equatable {}
 extension MiniPlengi.DeflateError : Swift.Hashable {}
+extension MiniPlengi.TestModeStatus : Swift.Equatable {}
+extension MiniPlengi.TestModeStatus : Swift.Hashable {}
+extension MiniPlengi.TestModeStatus : Swift.RawRepresentable {}
 extension MiniPlengi.Result : Swift.Equatable {}
 extension MiniPlengi.Result : Swift.Hashable {}
 extension MiniPlengi.Result : Swift.RawRepresentable {}
@@ -451,6 +454,3 @@ extension MiniPlengi.ResponseType : Swift.RawRepresentable {}
 extension MiniPlengi.EngineStatus : Swift.Equatable {}
 extension MiniPlengi.EngineStatus : Swift.Hashable {}
 extension MiniPlengi.EngineStatus : Swift.RawRepresentable {}
-extension MiniPlengi.TestModeStatus : Swift.Equatable {}
-extension MiniPlengi.TestModeStatus : Swift.Hashable {}
-extension MiniPlengi.TestModeStatus : Swift.RawRepresentable {}

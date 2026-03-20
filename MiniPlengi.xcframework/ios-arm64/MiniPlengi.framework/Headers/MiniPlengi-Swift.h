@@ -542,10 +542,7 @@ SWIFT_CLASS("_TtC10MiniPlengi6Plengi")
 @class UNUserNotificationCenter;
 @class UNNotificationResponse;
 enum Result : NSInteger;
-@class UIApplication;
-@class UILocalNotification;
 @interface Plengi (SWIFT_EXTENSION(MiniPlengi))
-/// iOS 10 이상부터 광고에 대한 클릭 이벤트를 처리합니다. AppDelegate에서 필수로 불려야만 합니다.
 /// 성공한 경우 PlengiResponse.Result.SUCCESS / 문제가 발생했을 경우에는 PlengiResponse.Result.FAILED가 반환됩니다.
 /// \param center AppDelegate에 UNNotificationHandler에 있는 UNNotificationCenter 객체
 ///
@@ -557,30 +554,10 @@ enum Result : NSInteger;
 /// returns:
 /// PlengiResponse.Result: PlengiResponse 객체의 Result
 + (enum Result)processLoplatAdvertisement:(UNUserNotificationCenter * _Nonnull)center didReceive:(UNNotificationResponse * _Nonnull)response withCompletionHandler:(void (^ _Nonnull)(void))completionHandler SWIFT_WARN_UNUSED_RESULT;
-/// iOS 9 에서 광고에 대한 클릭 이벤트를 처리합니다. AppDelegate에서 필수로 불려야만 합니다.
-/// 성공한 경우 PlengiResponse.Result.SUCCESS / 문제가 발생했을 경우에는 PlengiResponse.Result.FAILED가 반환됩니다.
-/// \param application AppDelegate에 UILocalNotification 이벤트 함수의 application 객체
-///
-/// \param identifier AppDelegate에 UILocalNotification 이벤트 함수의 idenfier 문자열
-///
-/// \param notification AppDelegate에 UILocalNotification 이벤트 함수의 notification 객체
-///
-/// \param completionHandler AppDelegate에 UILocalNotification 이벤트 함수의 completionHandler 객체
-///
-///
-/// returns:
-/// PlengiResponse.Result: PlengiResponse 객체의 Result
-+ (enum Result)processLoplatAdvertisement:(UIApplication * _Nonnull)application handleActionWithIdentifier:(NSString * _Nullable)identifier for:(UILocalNotification * _Nonnull)notification completionHandler:(void (^ _Nonnull)(void))completionHandler SWIFT_WARN_UNUSED_RESULT;
-/// iOS 9 에서 앱이 종료되어 있을 때, 광고알림이 올 경우에 대한 클릭 이벤트를 처리합니다.
-/// 성공한 경우 PlengiResponse.Result.SUCCESS / 문제가 발생했을 경우에는 PlengiResponse.Result.FAILED가 반환됩니다.
-/// \param application AppDelegate에 application_didFinishlaunchingWithOptions 이벤트 함수의 application 객체
-///
-/// \param launchOptions AppDelegate에 application_didFinishlaunchingWithOptions 이벤트 함수의 launchOptions 객체
-///
-///
-/// returns:
-/// PlengiResponse.Result: PlengiResponse 객체의 Result
-+ (enum Result)processLoplatAdvertisement:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@interface Plengi (SWIFT_EXTENSION(MiniPlengi))
++ (enum Result)initWithClientID:(NSString * _Nonnull)ID clientSecret:(NSString * _Nonnull)secret echoCode:(NSString * _Nullable)echoCode SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("\nThis method will be deprecated loplat SDK v1.3.2\nPlease consider using `Plengi.initialize(clientID:clientSecret:)` API instead.\nOnce deprecated, this method will always return .FAIL.\n");
 @end
 
 @interface Plengi (SWIFT_EXTENSION(MiniPlengi))
@@ -621,20 +598,6 @@ enum Result : NSInteger;
 @end
 
 @interface Plengi (SWIFT_EXTENSION(MiniPlengi))
-/// loplat SDK를 초기화합니다. SDK를 사용하기 위해서는 필수로 호출되어야만 합니다.
-/// Deprecated:
-/// 해당 API는 Swift 5 대응으로 인해 로플랫 SDK 버전 1.3.2 에서 Deprecated 되었습니다.
-/// 대신 <code>Plengi.initialize</code> API를 사용해주세요.
-/// \param ID 로플랫에서 발급받은 클라이언트 아이디
-///
-/// \param secret 로플랫에서 발급받은 클라이언트 시크릿키
-///
-/// \param echoCode 통신에 사용하는 사용자 지정 코드
-///
-///
-/// returns:
-/// PlengiResponse.Result: PlengiResponse 객체의 Result
-+ (enum Result)initWithClientID:(NSString * _Nonnull)ID clientSecret:(NSString * _Nonnull)secret echoCode:(NSString * _Nullable)echoCode SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method will be deprecated loplat SDK v1.3.2\nPlease consider using `Plengi.initialize()` API instead.`");
 /// loplat SDK echo ocde를 세팅합니다.
 /// 성공: PlengiResponse.Result.SUCCESS, 실패: PlengiResponse.Result.FAIL 값 리턴
 /// \param echoCode 통신에 사용하는 사용자 지정 코드
@@ -643,6 +606,16 @@ enum Result : NSInteger;
 /// returns:
 /// PlengiResponse.Result: PlengiResponse 객체의 Result
 + (enum Result)setEchoCodeWithEchoCode:(NSString * _Nullable)echoCode SWIFT_WARN_UNUSED_RESULT;
+/// loplat SDK를 초기화합니다. SDK를 사용하기 위해서는 필수로 호출되어야만 합니다.
+/// warning:
+/// 반드시 AppDelegate에서만 호출하여야합니다.
+/// \param clientID 로플랫에서 발급받은 클라이언트 아이디
+///
+/// \param clientSecret 로플랫에서 발급받은 클라이언트 시크릿키
+///
+///
+/// returns:
+/// PlengiResponse.Result: PlengiResponse 객체의 Result
 + (enum Result)initializeWithClientID:(NSString * _Nonnull)ID clientSecret:(NSString * _Nonnull)secret SWIFT_WARN_UNUSED_RESULT;
 + (void)setBrazeUserIDWithUserID:(NSString * _Nonnull)userID;
 /// MiniPlengi 사용을 중지합니다.
@@ -669,9 +642,6 @@ enum Result : NSInteger;
 /// 위치 권한을 요청합니다.
 /// 위치 권한은 iOS 버전별로 요청 시나리오가 상이합니다.
 /// <ul>
-///   <li>
-///     iOS 12이하 - Foreground에서 ‘항상’ 권한을 요청합니다.
-///   </li>
 ///   <li>
 ///     iOS 13.0이상 iOS 13.3.1 이하 - Foreground에서 ‘앱 사용 중’ 권한을 요청합니다. 이후, Background에서 ‘항상’ 권한을 요청합니다.
 ///   </li>
