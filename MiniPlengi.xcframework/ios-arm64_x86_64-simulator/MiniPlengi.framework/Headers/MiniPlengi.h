@@ -1,9 +1,6 @@
 //
-//  PlaceEngine.h
-//  PlaceEngine
-//
-//  Created by 상훈 on 13/12/2017.
-//  Copyright © 2017 loplat. All rights reserved.
+//  MiniPlengi.h
+//  MiniPlengi
 //
 
 #import <UIKit/UIKit.h>
