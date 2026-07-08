@@ -19,8 +19,8 @@ b.회사
 c.사용 목적
 ```
 
-* deployment target 13.0 이상
-* Xcode 15 이상
+* deployment target 14.0 이상
+* Xcode 16 이상
 
 ## Documentation
 
