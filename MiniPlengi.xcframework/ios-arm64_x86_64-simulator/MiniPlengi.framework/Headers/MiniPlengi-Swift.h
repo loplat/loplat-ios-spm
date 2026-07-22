@@ -765,14 +765,6 @@ typedef SWIFT_ENUM(NSInteger, Result, open) {
   ResultNOT_INITIALIZED = -9,
 };
 
-typedef SWIFT_ENUM(NSInteger, TestModeStatus, open) {
-  TestModeStatusRELEASE_SERVER = 0,
-  TestModeStatusHALF_STAGING_SERVER = 1,
-  TestModeStatusFULL_STAGING_SERVER = 2,
-  TestModeStatusGKE_RELEASE_SERVER = 100,
-  TestModeStatusGKE_STAGING_SERVER = 101,
-};
-
 @class UserStatusTransitionGPSPoint;
 /// 상태 전환 판정에 사용된 좌표의 역할과 값을 보존하는 객체입니다.
 SWIFT_CLASS("_TtC10MiniPlengi38UserStatusTransitionDecisionCoordinate")
@@ -1600,14 +1592,6 @@ typedef SWIFT_ENUM(NSInteger, Result, open) {
   ResultNOT_SUPPORTED_OS_VERSION = -7,
   ResultALREADY_STARTED = -8,
   ResultNOT_INITIALIZED = -9,
-};
-
-typedef SWIFT_ENUM(NSInteger, TestModeStatus, open) {
-  TestModeStatusRELEASE_SERVER = 0,
-  TestModeStatusHALF_STAGING_SERVER = 1,
-  TestModeStatusFULL_STAGING_SERVER = 2,
-  TestModeStatusGKE_RELEASE_SERVER = 100,
-  TestModeStatusGKE_STAGING_SERVER = 101,
 };
 
 @class UserStatusTransitionGPSPoint;

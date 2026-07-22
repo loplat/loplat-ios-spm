@@ -8,7 +8,6 @@ import AppTrackingTransparency
 import BackgroundTasks
 import CFNetwork
 import SystemConfiguration.CaptiveNetwork
-import CommonCrypto
 import Compression
 import CoreLocation
 import CoreML
@@ -19,6 +18,7 @@ import Network
 import NetworkExtension
 import SQLite3
 import SafariServices
+import Security
 import Swift
 import SystemConfiguration
 import UIKit
@@ -27,25 +27,6 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import os
-public enum MonitoringType : Swift.Int {
-  case STAY
-  case TRACKING
-  case ADV_TRACKING
-  case OFFLINE
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.Int)
-  #endif
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-extension MiniPlengi.Deflate {
-  public static func compress(data: Foundation.Data) -> Foundation.Data
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Plengi : ObjectiveC.NSObject {
-  @objc deinit
-}
 public enum UserStatus : Swift.Int {
   case FAST_MOVE
   case MOVE
@@ -59,16 +40,108 @@ public enum UserStatus : Swift.Int {
     get
   }
 }
-public enum DeflateError : Swift.Error {
-  case wrongUncompressedBlockLengths
-  case wrongBlockType
-  case wrongSymbol
-  case symbolNotFound
-  public static func == (a: MiniPlengi.DeflateError, b: MiniPlengi.DeflateError) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
+@_inheritsConvenienceInitializers @objc open class Advertisement : ObjectiveC.NSObject, Foundation.NSSecureCoding {
+  @objc public static var supportsSecureCoding: Swift.Bool
+  @objc open var alarm: Swift.String
+  @objc open var title: Swift.String?
+  @objc open var body: Swift.String?
+  @objc open var img: Swift.String
+  @objc open var campaign_id: Swift.Int
+  @objc open var delay: Swift.Int
+  @objc open var delay_type: Swift.String
+  @objc open var intent: Swift.String
+  @objc open var msg_id: Swift.Int
+  @objc open var target_pkg: Swift.String
+  @objc open var client_code: Swift.String
+  @objc open var fcm_token_id: Swift.Int
+  @objc open var ad_type: Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc required convenience public init?(coder aDecoder: Foundation.NSCoder)
+  #endif
+  @objc public func encode(with aCoder: Foundation.NSCoder)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension MiniPlengi.Advertisement {
+  public func adSend(phoneNumber: Swift.String)
+}
+@_inheritsConvenienceInitializers @objc open class Area : ObjectiveC.NSObject, Foundation.NSSecureCoding {
+  @objc public static var supportsSecureCoding: Swift.Bool
+  @objc public var id: Swift.Int
+  @objc public var name: Swift.String
+  @objc public var tag: Swift.String
+  @objc public var lat: Swift.Double
+  @objc public var lng: Swift.Double
+  #if compiler(>=5.3) && $NonescapableTypes
+  convenience public init?(_ data: Any?)
+  #endif
+  @objc public func encode(with aCoder: Foundation.NSCoder)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc required convenience public init?(coder aDecoder: Foundation.NSCoder)
+  #endif
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc final public class BubbleMonitoringRegionLogPayload : ObjectiveC.NSObject, Foundation.NSSecureCoding {
+  @objc public static var supportsSecureCoding: Swift.Bool
+  @objc final public let identifier: Swift.String
+  @objc final public let latitude: Swift.Double
+  @objc final public let longitude: Swift.Double
+  @objc final public let radius: Swift.Double
+  @objc public init(identifier: Swift.String, latitude: Swift.Double, longitude: Swift.Double, radius: Swift.Double)
+  @objc convenience public init(region: CoreLocation.CLCircularRegion)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc required convenience public init?(coder aDecoder: Foundation.NSCoder)
+  #endif
+  @objc final public func encode(with aCoder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc open class CampaignCandidate : ObjectiveC.NSObject, Foundation.NSSecureCoding {
+  @objc public static var supportsSecureCoding: Swift.Bool
+  @objc public var campaign_id: Swift.Int
+  @objc public var client_code: Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc required convenience public init?(coder aDecoder: Foundation.NSCoder)
+  #endif
+  @objc public func encode(with aCoder: Foundation.NSCoder)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc open class Complex : ObjectiveC.NSObject, Foundation.NSSecureCoding {
+  @objc public static var supportsSecureCoding: Swift.Bool
+  @objc public var id: Swift.Int
+  @objc public var name: Swift.String
+  @objc public var branch_name: Swift.String
+  @objc public var category: Swift.String
+  @objc public var category_code: Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  convenience public init?(_ data: Any?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc required convenience public init?(coder aDecoder: Foundation.NSCoder)
+  #endif
+  @objc public func encode(with aCoder: Foundation.NSCoder)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc open class District : ObjectiveC.NSObject, Foundation.NSSecureCoding {
+  @objc public static var supportsSecureCoding: Swift.Bool
+  @objc public var lv0_code: Swift.String
+  @objc public var lv1_name: Swift.String
+  @objc public var lv2_name: Swift.String
+  @objc public var lv3_name: Swift.String
+  @objc public var lv1_code: Swift.String
+  @objc public var lv2_code: Swift.String
+  @objc public var lv3_code: Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  convenience public init?(_ data: Any?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc required convenience public init?(coder aDecoder: Foundation.NSCoder)
+  #endif
+  @objc public func encode(with aCoder: Foundation.NSCoder)
+  @objc override dynamic public init()
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc open class Fence : ObjectiveC.NSObject, Foundation.NSSecureCoding {
   @objc public static var supportsSecureCoding: Swift.Bool
@@ -98,18 +171,34 @@ public enum DeflateError : Swift.Error {
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc open class District : ObjectiveC.NSObject, Foundation.NSSecureCoding {
+@_inheritsConvenienceInitializers @objc open class Location : ObjectiveC.NSObject, Foundation.NSSecureCoding {
   @objc public static var supportsSecureCoding: Swift.Bool
-  @objc public var lv0_code: Swift.String
-  @objc public var lv1_name: Swift.String
-  @objc public var lv2_name: Swift.String
-  @objc public var lv3_name: Swift.String
-  @objc public var lv1_code: Swift.String
-  @objc public var lv2_code: Swift.String
-  @objc public var lv3_code: Swift.String
+  @objc public var provider: Swift.String
+  @objc public var floor: Swift.Int
+  @objc public var time: Swift.Int64
+  @objc public var lat: Swift.Double
+  @objc public var lng: Swift.Double
+  @objc public var accuracy: Swift.Double
   #if compiler(>=5.3) && $NonescapableTypes
   convenience public init?(_ data: Any?)
   #endif
+  convenience public init(lat: Swift.Double, lng: Swift.Double)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc required convenience public init?(coder aDecoder: Foundation.NSCoder)
+  #endif
+  @objc public func encode(with aCoder: Foundation.NSCoder)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc open class Nearbys : ObjectiveC.NSObject, Foundation.NSSecureCoding {
+  @objc public static var supportsSecureCoding: Swift.Bool
+  @objc public var loplat_id: Swift.Int
+  @objc public var placename: Swift.String
+  @objc public var tags: Swift.String
+  @objc public var floor: Swift.Int
+  @objc public var lat: Swift.Double
+  @objc public var lng: Swift.Double
+  @objc public var accuracy: Swift.Double
   #if compiler(>=5.3) && $NonescapableTypes
   @objc required convenience public init?(coder aDecoder: Foundation.NSCoder)
   #endif
@@ -145,65 +234,6 @@ public enum DeflateError : Swift.Error {
   @objc public func encode(with aCoder: Foundation.NSCoder)
   @objc override dynamic public init()
   @objc deinit
-}
-@_inheritsConvenienceInitializers @objc open class CampaignCandidate : ObjectiveC.NSObject, Foundation.NSSecureCoding {
-  @objc public static var supportsSecureCoding: Swift.Bool
-  @objc public var campaign_id: Swift.Int
-  @objc public var client_code: Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc required convenience public init?(coder aDecoder: Foundation.NSCoder)
-  #endif
-  @objc public func encode(with aCoder: Foundation.NSCoder)
-  @objc override dynamic public init()
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class Deflate {
-  public static func decompress(data: Foundation.Data) throws -> Foundation.Data
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc open class Location : ObjectiveC.NSObject, Foundation.NSSecureCoding {
-  @objc public static var supportsSecureCoding: Swift.Bool
-  @objc public var provider: Swift.String
-  @objc public var floor: Swift.Int
-  @objc public var time: Swift.Int64
-  @objc public var lat: Swift.Double
-  @objc public var lng: Swift.Double
-  @objc public var accuracy: Swift.Double
-  #if compiler(>=5.3) && $NonescapableTypes
-  convenience public init?(_ data: Any?)
-  #endif
-  convenience public init(lat: Swift.Double, lng: Swift.Double)
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc required convenience public init?(coder aDecoder: Foundation.NSCoder)
-  #endif
-  @objc public func encode(with aCoder: Foundation.NSCoder)
-  @objc override dynamic public init()
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc open class Advertisement : ObjectiveC.NSObject, Foundation.NSSecureCoding {
-  @objc public static var supportsSecureCoding: Swift.Bool
-  @objc open var alarm: Swift.String
-  @objc open var title: Swift.String?
-  @objc open var body: Swift.String?
-  @objc open var img: Swift.String
-  @objc open var campaign_id: Swift.Int
-  @objc open var delay: Swift.Int
-  @objc open var delay_type: Swift.String
-  @objc open var intent: Swift.String
-  @objc open var msg_id: Swift.Int
-  @objc open var target_pkg: Swift.String
-  @objc open var client_code: Swift.String
-  @objc open var fcm_token_id: Swift.Int
-  @objc open var ad_type: Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc required convenience public init?(coder aDecoder: Foundation.NSCoder)
-  #endif
-  @objc public func encode(with aCoder: Foundation.NSCoder)
-  @objc override dynamic public init()
-  @objc deinit
-}
-extension MiniPlengi.Advertisement {
-  public func adSend(phoneNumber: Swift.String)
 }
 @objc public enum Result : Swift.Int {
   case SUCCESS = 0
@@ -298,68 +328,11 @@ extension MiniPlengi.Advertisement {
   @objc override dynamic public init()
   @objc deinit
 }
-@objc public protocol PlaceDelegate {
-  @objc func responsePlaceEvent(_ plengiResponse: MiniPlengi.PlengiResponse)
-  @objc optional func responseManualProcess(_ msg: Swift.String)
-}
-@_hasMissingDesignatedInitializers public class ManagingVersion {
-  public static var version: Swift.String
-  public static func main()
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc open class Area : ObjectiveC.NSObject, Foundation.NSSecureCoding {
-  @objc public static var supportsSecureCoding: Swift.Bool
-  @objc public var id: Swift.Int
-  @objc public var name: Swift.String
-  @objc public var tag: Swift.String
-  @objc public var lat: Swift.Double
-  @objc public var lng: Swift.Double
-  #if compiler(>=5.3) && $NonescapableTypes
-  convenience public init?(_ data: Any?)
-  #endif
-  @objc public func encode(with aCoder: Foundation.NSCoder)
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc required convenience public init?(coder aDecoder: Foundation.NSCoder)
-  #endif
-  @objc override dynamic public init()
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc open class Complex : ObjectiveC.NSObject, Foundation.NSSecureCoding {
-  @objc public static var supportsSecureCoding: Swift.Bool
-  @objc public var id: Swift.Int
-  @objc public var name: Swift.String
-  @objc public var branch_name: Swift.String
-  @objc public var category: Swift.String
-  @objc public var category_code: Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
-  convenience public init?(_ data: Any?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc required convenience public init?(coder aDecoder: Foundation.NSCoder)
-  #endif
-  @objc public func encode(with aCoder: Foundation.NSCoder)
-  @objc override dynamic public init()
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc open class Nearbys : ObjectiveC.NSObject, Foundation.NSSecureCoding {
-  @objc public static var supportsSecureCoding: Swift.Bool
-  @objc public var loplat_id: Swift.Int
-  @objc public var placename: Swift.String
-  @objc public var tags: Swift.String
-  @objc public var floor: Swift.Int
-  @objc public var lat: Swift.Double
-  @objc public var lng: Swift.Double
-  @objc public var accuracy: Swift.Double
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc required convenience public init?(coder aDecoder: Foundation.NSCoder)
-  #endif
-  @objc public func encode(with aCoder: Foundation.NSCoder)
-  @objc override dynamic public init()
-  @objc deinit
-}
-@objc public enum EngineStatus : Swift.Int {
-  case STOPPED = 0
-  case STARTED = 1
+public enum MonitoringType : Swift.Int {
+  case STAY
+  case TRACKING
+  case ADV_TRACKING
+  case OFFLINE
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
   #endif
@@ -367,75 +340,6 @@ extension MiniPlengi.Advertisement {
   public var rawValue: Swift.Int {
     get
   }
-}
-@objc public enum TestModeStatus : Swift.Int {
-  case RELEASE_SERVER = 0
-  case HALF_STAGING_SERVER = 1
-  case FULL_STAGING_SERVER = 2
-  case GKE_RELEASE_SERVER = 100
-  case GKE_STAGING_SERVER = 101
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.Int)
-  #endif
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-extension MiniPlengi.Plengi {
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc dynamic public class func setEchoCode(echoCode: Swift.String?) -> MiniPlengi.Result
-  #endif
-  @objc dynamic public class func initialize(clientID ID: Swift.String, clientSecret secret: Swift.String) -> MiniPlengi.Result
-  @objc dynamic public class func setBrazeUserID(userID: Swift.String)
-  @objc dynamic public class func stop() -> MiniPlengi.Result
-  @objc dynamic public class func start() -> MiniPlengi.Result
-  @objc dynamic public class func start(_ interval: Swift.Int) -> MiniPlengi.Result
-  @objc dynamic public class func requestAlwaysLocationAuthorization()
-  @objc dynamic public class func requestTrackingAuthorization(completion: @escaping () -> Swift.Void)
-  @objc dynamic public class func requestTrackingAuthorization() async
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc dynamic public class func getSdkVersion() -> Swift.String?
-  #endif
-}
-extension MiniPlengi.Plengi {
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc dynamic public class func getDelegate() -> (any MiniPlengi.PlaceDelegate)?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc dynamic public class func setDelegate(_ delegate: (any MiniPlengi.PlaceDelegate)?) -> MiniPlengi.Result
-  #endif
-  @objc dynamic public class func getEngineStatus() -> MiniPlengi.EngineStatus
-  @objc dynamic public class func isEnabledAdNetwork() -> Swift.Bool
-  @objc dynamic public class func enableAdNetwork(_ enableAd: Swift.Bool, enableNoti: Swift.Bool = true) -> MiniPlengi.Result
-}
-extension MiniPlengi.Plengi {
-  @objc dynamic public class func processLoplatAdvertisement(_ center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Swift.Void) -> MiniPlengi.Result
-}
-extension MiniPlengi.Plengi {
-  public class func setLocationAuthorizationAlert(title: Swift.String, message: Swift.String)
-}
-extension MiniPlengi.Plengi {
-  #if compiler(>=5.3) && $NonescapableTypes
-  @available(*, deprecated, message: "This method will be deprecated loplat SDK v1.3.2\nPlease consider using `Plengi.initialize(clientID:clientSecret:)` API instead.\nOnce deprecated, this method will always return .FAIL.")
-  @objc dynamic public class func `init`(clientID ID: Swift.String, clientSecret secret: Swift.String, echoCode: Swift.String? = nil) -> MiniPlengi.Result
-  #endif
-  @available(*, deprecated, message: "This method has been deprecated since loplat SDK v1.5.20.\n`Plengi.initialize(clientID:clientSecret:)` now automatically registers Background Fetch.\nCalling this method will have no effect.")
-  public class func registerBgFetch()
-}
-@objc final public class BubbleMonitoringRegionLogPayload : ObjectiveC.NSObject, Foundation.NSSecureCoding {
-  @objc public static var supportsSecureCoding: Swift.Bool
-  @objc final public let identifier: Swift.String
-  @objc final public let latitude: Swift.Double
-  @objc final public let longitude: Swift.Double
-  @objc final public let radius: Swift.Double
-  @objc public init(identifier: Swift.String, latitude: Swift.Double, longitude: Swift.Double, radius: Swift.Double)
-  @objc convenience public init(region: CoreLocation.CLCircularRegion)
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc required convenience public init?(coder aDecoder: Foundation.NSCoder)
-  #endif
-  @objc final public func encode(with aCoder: Foundation.NSCoder)
-  @objc deinit
 }
 @objc final public class UserStatusTransitionGPSPoint : ObjectiveC.NSObject, Foundation.NSSecureCoding {
   @objc public static var supportsSecureCoding: Swift.Bool
@@ -495,17 +399,91 @@ extension MiniPlengi.Plengi {
   @objc final public func encode(with aCoder: Foundation.NSCoder)
   @objc deinit
 }
-extension MiniPlengi.MonitoringType : Swift.Equatable {}
-extension MiniPlengi.MonitoringType : Swift.Hashable {}
-extension MiniPlengi.MonitoringType : Swift.RawRepresentable {}
+@objc public protocol PlaceDelegate {
+  @objc func responsePlaceEvent(_ plengiResponse: MiniPlengi.PlengiResponse)
+  @objc optional func responseManualProcess(_ msg: Swift.String)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Plengi : ObjectiveC.NSObject {
+  @objc deinit
+}
+@objc public enum EngineStatus : Swift.Int {
+  case STOPPED = 0
+  case STARTED = 1
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension MiniPlengi.Plengi {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public class func setEchoCode(echoCode: Swift.String?) -> MiniPlengi.Result
+  #endif
+  @objc dynamic public class func initialize(clientID ID: Swift.String, clientSecret secret: Swift.String) -> MiniPlengi.Result
+  @objc dynamic public class func setBrazeUserID(userID: Swift.String)
+  @objc dynamic public class func stop() -> MiniPlengi.Result
+  @objc dynamic public class func start() -> MiniPlengi.Result
+  @objc dynamic public class func start(_ interval: Swift.Int) -> MiniPlengi.Result
+  @objc dynamic public class func requestAlwaysLocationAuthorization()
+  @objc dynamic public class func requestTrackingAuthorization(completion: @escaping () -> Swift.Void)
+  @objc dynamic public class func requestTrackingAuthorization() async
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public class func getSdkVersion() -> Swift.String?
+  #endif
+}
+extension MiniPlengi.Plengi {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public class func getDelegate() -> (any MiniPlengi.PlaceDelegate)?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public class func setDelegate(_ delegate: (any MiniPlengi.PlaceDelegate)?) -> MiniPlengi.Result
+  #endif
+  @objc dynamic public class func getEngineStatus() -> MiniPlengi.EngineStatus
+  @objc dynamic public class func isEnabledAdNetwork() -> Swift.Bool
+  @objc dynamic public class func enableAdNetwork(_ enableAd: Swift.Bool, enableNoti: Swift.Bool = true) -> MiniPlengi.Result
+}
+extension MiniPlengi.Plengi {
+  @objc dynamic public class func processLoplatAdvertisement(_ center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Swift.Void) -> MiniPlengi.Result
+}
+extension MiniPlengi.Plengi {
+  public class func setLocationAuthorizationAlert(title: Swift.String, message: Swift.String)
+}
+extension MiniPlengi.Plengi {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "This method will be deprecated loplat SDK v1.3.2\nPlease consider using `Plengi.initialize(clientID:clientSecret:)` API instead.\nOnce deprecated, this method will always return .FAIL.")
+  @objc dynamic public class func `init`(clientID ID: Swift.String, clientSecret secret: Swift.String, echoCode: Swift.String? = nil) -> MiniPlengi.Result
+  #endif
+  @available(*, deprecated, message: "This method has been deprecated since loplat SDK v1.5.20.\n`Plengi.initialize(clientID:clientSecret:)` now automatically registers Background Fetch.\nCalling this method will have no effect.")
+  public class func registerBgFetch()
+}
+@_hasMissingDesignatedInitializers public class ManagingVersion {
+  public static var version: Swift.String
+  public static func main()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class Deflate {
+  public static func decompress(data: Foundation.Data) throws -> Foundation.Data
+  @objc deinit
+}
+extension MiniPlengi.Deflate {
+  public static func compress(data: Foundation.Data) -> Foundation.Data
+}
+public enum DeflateError : Swift.Error {
+  case wrongUncompressedBlockLengths
+  case wrongBlockType
+  case wrongSymbol
+  case symbolNotFound
+  public static func == (a: MiniPlengi.DeflateError, b: MiniPlengi.DeflateError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 extension MiniPlengi.UserStatus : Swift.Equatable {}
 extension MiniPlengi.UserStatus : Swift.Hashable {}
 extension MiniPlengi.UserStatus : Swift.RawRepresentable {}
-extension MiniPlengi.DeflateError : Swift.Equatable {}
-extension MiniPlengi.DeflateError : Swift.Hashable {}
-extension MiniPlengi.TestModeStatus : Swift.Equatable {}
-extension MiniPlengi.TestModeStatus : Swift.Hashable {}
-extension MiniPlengi.TestModeStatus : Swift.RawRepresentable {}
 extension MiniPlengi.Result : Swift.Equatable {}
 extension MiniPlengi.Result : Swift.Hashable {}
 extension MiniPlengi.Result : Swift.RawRepresentable {}
@@ -515,6 +493,11 @@ extension MiniPlengi.PlaceEvent : Swift.RawRepresentable {}
 extension MiniPlengi.ResponseType : Swift.Equatable {}
 extension MiniPlengi.ResponseType : Swift.Hashable {}
 extension MiniPlengi.ResponseType : Swift.RawRepresentable {}
+extension MiniPlengi.MonitoringType : Swift.Equatable {}
+extension MiniPlengi.MonitoringType : Swift.Hashable {}
+extension MiniPlengi.MonitoringType : Swift.RawRepresentable {}
 extension MiniPlengi.EngineStatus : Swift.Equatable {}
 extension MiniPlengi.EngineStatus : Swift.Hashable {}
 extension MiniPlengi.EngineStatus : Swift.RawRepresentable {}
+extension MiniPlengi.DeflateError : Swift.Equatable {}
+extension MiniPlengi.DeflateError : Swift.Hashable {}
